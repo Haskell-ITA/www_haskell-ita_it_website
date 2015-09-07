@@ -1,0 +1,28 @@
+* Haskell-ITA HomePage
+** TODO configurare email info@haskell-ita.it
+** DONE miglioramente vari
+- usare misure proporzionali del logo dell'immagine
+** DONE mettere logo di Haskell ITA
+** DONE creare mini-logo da mettere come favicon
+** DONE mettere una foto per ogni evento di Meetup e con la data sopra
+** TODO pubblicare il sito sul server
+** TODO far puntare il DNS
+
+** DONE mettere tutti i contatti
+** DONE decidere se mettere una header image che sia significativa
+** TODO Usare una immagine di background migliore
+
+L'immagine di background e` troppo stellata/luminosa e non rende leggibile il testo.
+
+Sostituire con una immagine migliore.
+
+** TODO creare REPO su Haskell-ITA con il template della pagina e tutto quello che serve per ricrearla
+** TODO Motivazioni da dire in mailing list
+
+Ho mantenuto la KB su GitHub perche` sia GitHub pages che Gitit sono un ulteriore cambiamento di configurazioni, e meglio rimanere stabili per un po'. La soluzione definitiva da proporre, la presento piu` avanti.
+
+La pagina ha lo scopo di fare da entry-point per la community, ma poi l'attivita` vera e` fatta sugli altri siti.
+
+Dire che ho messo il template del tutto su GitHub e che e` modificabile, anche se le modifiche le devo caricare a mano.
+
+
