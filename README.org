@@ -1,23 +1,30 @@
 * Haskell-ITA HomePage
-** TODO configurare email info@haskell-ita.it
-** DONE miglioramente vari
+** Initial Release
+*** DONE configurare email info@haskell-ita.it
+*** DONE miglioramente vari
 - usare misure proporzionali del logo dell'immagine
-** DONE mettere logo di Haskell ITA
-** DONE creare mini-logo da mettere come favicon
-** DONE mettere una foto per ogni evento di Meetup e con la data sopra
-** TODO pubblicare il sito sul server
-** TODO far puntare il DNS
+*** DONE mettere logo di Haskell ITA
+*** DONE creare mini-logo da mettere come favicon
+*** DONE mettere una foto per ogni evento di Meetup e con la data sopra
+*** TODO pubblicare il sito sul server
+- DONE creare rsync script
+- DONE non copiare directory .git
+- CANCELLED non copiare README.org
+- DONE impostare NGINX
+- TODO testare
+- TODO vedere se vanno etags
+*** DONE far puntare il DNS
 
-** DONE mettere tutti i contatti
-** DONE decidere se mettere una header image che sia significativa
-** TODO Usare una immagine di background migliore
+*** DONE mettere tutti i contatti
+*** DONE decidere se mettere una header image che sia significativa
+*** TODO Usare una immagine di background migliore
 
 L'immagine di background e` troppo stellata/luminosa e non rende leggibile il testo.
 
 Sostituire con una immagine migliore.
 
-** TODO creare REPO su Haskell-ITA con il template della pagina e tutto quello che serve per ricrearla
-** TODO Motivazioni da dire in mailing list
+*** TODO creare REPO su Haskell-ITA con il template della pagina e tutto quello che serve per ricrearla
+*** TODO Motivazioni da dire in mailing list
 
 Ho mantenuto la KB su GitHub perche` sia GitHub pages che Gitit sono un ulteriore cambiamento di configurazioni, e meglio rimanere stabili per un po'. La soluzione definitiva da proporre, la presento piu` avanti.
 
