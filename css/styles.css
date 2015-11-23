@@ -1,0 +1,150 @@
+.navbar-form input, .form-inline input {
+  width:auto;
+}
+
+.nav-tabs>li>a::first-letter {
+    text-transform:uppercase;
+}
+
+body {
+    padding-top:60px;
+    color: black;
+}
+
+pre code {
+    color: black;
+}
+
+.panel-body {
+    font-family: 'PT Serif',serif;
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+footer {
+  margin-top:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color:#ededed;
+}
+
+#masthead {
+}
+
+#masthead h2 {
+    line-height: 1em;
+    margin: 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#masthead p {
+    line-height: 1em;
+    margin: 0.2em;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#masthead .well {
+  margin-top:31px;
+}
+
+.navbar {
+    z-index: 1000;
+    background-color:white;
+}
+
+.navbar.affix {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+.story-img {
+  margin-top:25%;
+  display:block;
+}
+
+.icon-bar {
+  background-color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 80px;
+  }
+}
+
+.dropdown-menu {
+  min-width: 250px;
+}
+
+.panel {
+  border-color:transparent;
+  border-radius:0;
+}
+
+.thumbnail {
+  margin-bottom:8px;
+}
+
+.img-container {
+  overflow:hidden;
+  height:170px;
+}
+
+.img-container img {
+  min-width:280px;
+  min-height:180px;
+  max-width:380px;
+  max-height:280px;
+}
+
+.txt-container {
+  overflow:hidden;
+  height:100px;
+}
+
+.panel-body {
+    padding: 1px;
+    margin-bottom: 2em;
+}
+
+.panel .lead {
+  overflow:hidden;
+  height:90px;
+}
+
+.label-float{
+  margin:0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width:100%;
+  opacity:.9;
+  padding:6px;
+  color:#fff;
+}
+    
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+

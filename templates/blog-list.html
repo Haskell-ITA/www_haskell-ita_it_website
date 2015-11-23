@@ -1,0 +1,46 @@
+$for(blogs)$
+
+<div class="row">
+  <br>
+  <div class="col-xs-12 col-md-9">
+    <h2><a href="$url$">$title$</a></h2>
+      <ul class="list-inline"><li>$date$</li><li>$category$</li></ul>
+$if(teaser)$
+$teaser$
+$else$
+$body$
+$endif$
+                        
+$if(teaser)$
+      <p class="lead"><a href="$url$" class="btn btn-default">Read More</a></p>
+$endif$
+ 
+  </div>
+  <div class="col-md-3"></div>
+  <br><br>
+</div>
+$endfor$
+
+<!-- Pagination -->
+<nav>
+  <ul class="pager">
+  $if(previousPageUrl)$
+    <li class="previous">
+      <a href="$previousPageUrl$">Previous</a>
+    </li>
+  $else$
+     <li class="previous disabled">
+      <a href="#">Previous</a>
+    </li>
+  $endif$
+  $if(nextPageUrl)$
+     <li class="next">
+      <a href="$nextPageUrl$">Next</a>
+    </li>
+  $else$
+      <li class="next disabled">
+      <a href="#">Next</a>
+    </li>
+  $endif$
+  </ul>
+</nav>

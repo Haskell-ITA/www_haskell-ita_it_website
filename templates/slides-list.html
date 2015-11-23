@@ -1,0 +1,32 @@
+    <!-- PAGE | BLOG -->
+    <!-- TODO: page-blog-list -->
+    <div class="pages page-blog" id="page-blog">
+        <div class="container">
+            <!-- Header -->
+            <header>
+            </header>
+            <!-- End Header -->
+            
+            <div class="row-fluid">
+                <div class="blog-details">
+                    $for(slides)$
+                    <!-- Article -->
+                    <article>
+                        $if(showdeadcode)$
+                        <!-- Blog image -->
+                        <!-- <a href="blog_1.html"> -->
+                            <!-- <img src="http://placehold.it/900x450"> -->
+                        <!-- </a> -->
+                        $endif$
+                        <!-- Blog title -->
+                        <a href="$url$"><img src="/$featureimage$" /></a>
+                        <h5>$title$</h5>
+                        <small>$date$</small>
+                    </article>
+                    <!-- End Article -->
+                    $endfor$
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE | BLOG -->
+
