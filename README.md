@@ -115,8 +115,6 @@ TODO impostare il LOGO in modo che venga DOPO la barra, dato che se cambia impag
 
 TODO provare a fare subscribe ai FEEDS quando ho installato 
 
-TODO aggiungere DISQUS o simile ai post
-
 TODO aggiungere autore del post quando presente
 
 TODO chiedere se puo` diventare la pagina standard di Haskell invece che il blog:
