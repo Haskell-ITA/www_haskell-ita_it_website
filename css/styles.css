@@ -7,8 +7,12 @@
 }
 
 body {
-    padding-top:60px;
+    padding-top: 60px;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+    body { padding-top: 110px; }
 }
 
 pre code {
