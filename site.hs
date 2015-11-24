@@ -85,10 +85,10 @@ main = do
                   >>= loadAndApplyTemplate "templates/blog-list.html" (pageCtx (Just category) i catPages categories tags)
                   >>= loadAndApplyTemplate "templates/default.html" (defaultCtx (Just category) categories tags)
 
-    -- rss
-    create ["rss/atom.xml"] $ do
+    -- feeds
+    create ["atom.xml"] $ do
          route idRoute
-         compile $ renderBlogRss <=< fmap (take 20) . loadBlogs $ blogPattern
+         compile $ renderBlogAtom <=< fmap (take 20) . loadBlogs $ blogPattern
 
     -- templates
     match "templates/*.html" $ compile templateCompiler
@@ -161,8 +161,8 @@ blogDetailCtx categories tags =
       teaserField "teaser" blogSnapshot         <>
       defaultCtx Nothing categories tags
   
-rssCtx :: Context String
-rssCtx = 
+feedsCtx :: Context String
+feedsCtx = 
       cdataContext metadataField    <>
       bodyField "description"       <>
       urlField "url"                <>
@@ -267,8 +267,8 @@ renderTagListForTopMenu activeSection tags = do
 
       makeLink tag url _ _ _ = makeLi tag (dropFileName url)
 
-renderBlogRss :: [Item String] -> Compiler (Item String)
-renderBlogRss = renderRss myFeedConfiguration rssCtx
+renderBlogAtom :: [Item String] -> Compiler (Item String)
+renderBlogAtom = renderAtom myFeedConfiguration feedsCtx
 
 -- metadata
 includeTagM :: MonadMetadata m => String -> [Identifier] -> m [Identifier]
