@@ -86,7 +86,7 @@ main = do
                   >>= loadAndApplyTemplate "templates/default.html" (defaultCtx (Just category) categories tags)
 
     -- rss
-    create ["rss/index.html"] $ do
+    create ["rss/atom.xml"] $ do
          route idRoute
          compile $ renderBlogRss <=< fmap (take 20) . loadBlogs $ blogPattern
 
