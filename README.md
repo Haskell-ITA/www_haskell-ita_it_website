@@ -109,13 +109,7 @@ If you miss the tag `date`, Hakyll generates a not clear error message like:
 
 ### Initial Release
 
-TODO migliorare header, footer e layout in generale
-
-TODO impostare il LOGO in modo che venga DOPO la barra, dato che se cambia impaginazione e va a capo (cellulare), il logo e\` coperto
-
 TODO provare a fare subscribe ai FEEDS quando ho installato 
-
-TODO aggiungere autore del post quando presente
 
 TODO chiedere se puo` diventare la pagina standard di Haskell invece che il blog:
 * cancello la knowldge-base su GitHub
