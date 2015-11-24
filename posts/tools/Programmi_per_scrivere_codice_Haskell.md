@@ -4,6 +4,10 @@ tags: knowledge-base, tools
 date: 2015-01-01
 ---
 
+## Contesto
+
+Queste sono note pratiche, per chi sta imparando Haskell, e vuole partecipare ai meetups con un ambiente di sviluppo funzionante. 
+
 ## Overview
 
 Al momento (2015-10-07) non esiste un editor/IDE per Haskell che sia semplice da installare, completa come features, ma esente da problemi nel passaggio da Cabal puro a Stack.

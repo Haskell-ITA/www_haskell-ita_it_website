@@ -4,6 +4,10 @@ tags: knowledge-base, tools
 date: 2015-01-01
 ---
 
+## Contesto
+
+Queste sono note pratiche, per chi sta imparando Haskell, e vuole partecipare ai meetups con un ambiente di sviluppo funzionante. 
+
 ## Installazione
 
 Per agevolare eventuali problemi di installazione e di tooling nel nostro
