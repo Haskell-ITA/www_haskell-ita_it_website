@@ -6,7 +6,7 @@
 
 Clone this repo locally.
 
-Compile the application with Nix or Stack. 
+Compile the application with Nix or Stack.
 
 #### Nix Instructions
 
@@ -20,7 +20,11 @@ Execute
 
 #### Stack Instructions
 
-TODO complete
+Execute
+    stack build
+    stack exec site clean
+    stack exec site build
+    stack exec site watch
 
 ### Website Configuration
 
@@ -45,7 +49,7 @@ Use already defined posts as example. Hakyll uses Pandoc that is very powerful a
 
 #### Teaser
 
-It is convenient to have an excerpt of a post displayed on the index page along with a “Read more…” link to encourage your readers to read the rest of the post. For doing this put the teaser symbol where the excerpt end. 
+It is convenient to have an excerpt of a post displayed on the index page along with a “Read more…” link to encourage your readers to read the rest of the post. For doing this put the teaser symbol where the excerpt end.
 
     <!--more-->
 
@@ -65,7 +69,7 @@ on the first column of a Markdown file. Pandoc will insert directly the HTML cod
 
 #### Change Top Menu
 
-Change the function `renderTagListForTopMenu` inside `site.hs` 
+Change the function `renderTagListForTopMenu` inside `site.hs`
 
 #### Change Page Format
 
@@ -97,7 +101,7 @@ Then make a Git commit, and push to the remote repo.
     git commit -a -m "<some-message>"
     git push
 
-The hosting server will make a pull, and publish the content of `_site/` directory. All other content will be not be published. 
+The hosting server will make a pull, and publish the content of `_site/` directory. All other content will be not be published.
 
 ### Known Problems
 
@@ -109,7 +113,7 @@ If you miss the tag `date`, Hakyll generates a not clear error message like:
 
 ### Initial Release
 
-TODO provare a fare subscribe ai FEEDS quando ho installato 
+TODO provare a fare subscribe ai FEEDS quando ho installato
 
 TODO chiedere se puo` diventare la pagina standard di Haskell invece che il blog:
 * cancello la knowldge-base su GitHub
@@ -124,4 +128,3 @@ TODO create a web-hook on GitHub
 TODO the web server receive the hook, make git pull of the repo, and then make a site build
 
 TODO daily the web server execute also a site clean and regeneration, in order to manage the big changes in the structure of the code of the site
-
