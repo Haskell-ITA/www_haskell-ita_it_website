@@ -21,6 +21,7 @@ Execute
 #### Stack Instructions
 
 Execute
+
     stack build
     stack exec site clean
     stack exec site build
