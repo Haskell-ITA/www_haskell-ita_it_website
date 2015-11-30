@@ -1,7 +1,7 @@
 ---
 title: Un semplice script con Turtle per gestire i file RAW+Jpeg della macchina fotografica.
 author: Luca Molteni <volothamp@gmail.com>
-date: 2015-12-30
+date: 2015-11-30
 tags: coding turtle
 ---
 
@@ -21,6 +21,8 @@ sono a tutti gli effetti la stessa immagine, ma in due formati separati, e molto
 
 Avevo un po' di file sparsi Raw + Jpeg nel disco rigido, e avevo bisogno un semplice script che mi permettesse di cercarli e copiarli in una directory.
 Un'ottima occasione per usare Haskell.
+
+<div></div><!--more-->
 
 Questo file è scritto in Literate Haskell, questo vuol dire che è un sorgente eseguibile quindi potete scaricare il codice sorgente qui:
 
