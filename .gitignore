@@ -3,3 +3,4 @@ _cache/
 dist/
 TAGS
 tmp/
+.stack-work
