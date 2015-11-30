@@ -26,11 +26,11 @@ Un'ottima occasione per usare Haskell.
 
 Questo file è scritto in Literate Haskell, questo vuol dire che è un sorgente eseguibile quindi potete scaricare il codice sorgente qui:
 
-<https://raw.githubusercontent.com/Haskell-ITA/www_haskell-ita_it_website/master/posts/coding/2015-10-30-Turtle-Raw.lhs>
+<https://raw.githubusercontent.com/Haskell-ITA/www_haskell-ita_it_website/master/posts/coding/2015-11-30-Turtle-Raw.lhs>
 
 e compilarlo utilizzando stack con il comando:
 
-    stack --resolver lts-3.15 --install-ghc runghc --package turtle 2015-10-30-Turtle-Raw.lhs
+    stack --resolver lts-3.15 --install-ghc runghc --package turtle 2015-11-30-Turtle-Raw.lhs
 
 Questo ci permette di installare automaticamente GHC sulla macchina.
 
