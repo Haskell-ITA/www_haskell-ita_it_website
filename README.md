@@ -130,12 +130,3 @@ TODO the web server receive the hook, make git pull of the repo, and then make a
 
 TODO daily the web server execute also a site clean and regeneration, in order to manage the big changes in the structure of the code of the site
 
-TODO simplify footer
-TODO check on small window the patch of Larsen
-TODO change the way I encode sections on the top menu for adapting to the new layout
-TODO includere assets per surface
-TODO titolo un po' meno grande
-TODO avere il header in testa fisso come era nel passato
-TODO usare la prima lettera maiuscola
-TODO vedere se non usare i bottoni ma indicare una lista semplice per i cantatti
-TODO includere link con i membri della community anche a DX
