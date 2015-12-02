@@ -9,6 +9,8 @@ Ecco una semplice soluzione a un problema comune utilizzando una libreria per fa
 
 In fotografia spesso si decide di memorizzare le proprie foto digitali in un formato chiamato RAW, che possiamo pensare come un equivalente di un rullino di un po' di tempo fa. I file RAW sono a tutti gli effetti i dati registrati dal sensore della macchina fotografica digitale.
 
+<div></div><!--more-->
+
 Questi non rappresentano una vera e propria immagine, in quanto vanno interpretati da un processore che fa il rendering. Si preferisce quindi sempre affiancargli i file Jpeg già processati. Questi ci danno la certezza di essere visti nello stesso modo su tutti i dispositivi.
 
 Le macchine fotografiche memorizzano la coppia Raw + Jpeg come due file separati con lo stesso nome nello stesso percorso del filesystem.
@@ -22,7 +24,6 @@ sono a tutti gli effetti la stessa immagine, ma in due formati separati, e molto
 Avevo un po' di file sparsi Raw + Jpeg nel disco rigido, e avevo bisogno un semplice script che mi permettesse di cercarli e copiarli in una directory.
 Un'ottima occasione per usare Haskell.
 
-<div></div><!--more-->
 
 Questo file è scritto in Literate Haskell, questo vuol dire che è un sorgente eseguibile. Potete scaricare il codice sorgente qui:
 

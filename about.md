@@ -34,6 +34,8 @@ Nel caso di documenti con contenuto "work in progress", è possibile pubblicarli
 
 Chi è autore di post relativi ad Haskell può comunicarlo e una copia del post o un suo link può essere aggiunto anche al sito Haskell-ITA.
 
+<a name="members"></a>
+
 ## Membri della Community
 
 Per facilitare la collaborazione, ecco un elenco non esaustivo di membri della community e di siti a loro collegati. NOTA: Chi vuole aggiungersi lo faccia direttamente modificando questa pagina da GitHub o lo chieda in mailing-list.

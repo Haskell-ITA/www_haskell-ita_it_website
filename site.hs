@@ -256,14 +256,11 @@ renderTagListForTopMenu activeSection tags = do
    where
 
       makeLi :: String -> String -> String
-      makeLi tag url =
-       let isActive e
-               = if Just tag == activeSection
-                 then e ! A.class_ "active"
-                 else e
-
-           e1 = isActive (H.li ! H.customAttribute "role" "presentation") 
-       in renderHtml $ e1 $ H.a ! A.href (toValue url) $ toHtml tag
+      makeLi tag url = 
+        let classStr = if Just tag == activeSection
+                       then "blog-nav-item active"
+                       else "blog-nav-item"
+        in renderHtml $ H.a ! A.href (toValue url) ! A.class_ classStr $ toHtml tag
 
       makeLink tag url _ _ _ = makeLi tag (dropFileName url)
 

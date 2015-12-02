@@ -1,23 +1,21 @@
-		  <div class="row">    
-           <br>
-           <div class="col-xs-12 col-md-9">
-             <h2>$title$</h2>
-             <ul class="list-inline"><li>$date$</li><li>$category$</li></ul>
-             $body$
-             <div id="disqus_thread"></div>
-             <script>
-              (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
+<div class="blog-post">
+  <h2 class="blog-post-title">$title$</h2>
+  <p class="blog-post-meta">$date$ in $category$</p>
 
-                s.src = '//haskellita.disqus.com/embed.js';
+  $body$
 
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-              })();
-             </script>
-             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-           </div>
-           </div>
-           <div class="col-md-3"></div>
-           <br><br>
-      </div>
+  <div id="disqus_thread"></div>
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    
+    s.src = '//haskellita.disqus.com/embed.js';
+    
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+</div>
+

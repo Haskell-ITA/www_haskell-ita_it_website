@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <!-- META DATA -->
-	  <meta name="generator" content="Hakyll" />
-    <meta charset="utf-8">
-    <link rel="alternate" type="application/atom+xml" title="Haskell ITA" href="/atom.xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="/css/styles.css" rel="stylesheet">
-	   
+
+ 	  <meta name="generator" content="Hakyll" />
+    <link rel="alternate" type="application/atom+xml" title="Haskell ITA" href="/atom.xml">
+   
     $if(title)$
-    <title>Haskell-ITA - $title$</title>
+    <title>$title$</title>
     $else$
     <title>Haskell-ITA</title>
     $endif$
 
     <link rel="shortcut icon" href="/favicon.ico">
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
-  	<link href="/css/styles.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-fixed-top">
+		<link href="/css/blog.css" rel="stylesheet">
+ 
+  </head>
+  <body>
+
+    <div class="blog-masthead navbar-fixed-top">
       <div class="container">
-          <ul class="nav nav-tabs">
-           $categoriesEntries$
-          </ul>
+        <nav class="blog-nav">
+          $categoriesEntries$
+       </nav>
       </div>
-   </nav>
-<div id="masthead">  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h2><img style="width:1.3em; height:1em; display: inline;" src="/images/logo_ita.png" alt="logo">Haskell-ITA</h2>
-          <p>La comunit&agrave; Italiana di programmatori Haskell.</p>
-      </div>
-   </div> 
-  </div><!-- /cont -->
-</div>
+    </div>
 
-<div class="container">
-     <div class="panel">
-        <div class="panel-body">
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title"><img style="width:1.3em; height:1em; display: inline;" src="/images/logo_ita.png" alt="logo">Haskell-ITA</h1>
+        <p class="lead blog-description">La comunit&agrave; Italiana di programmatori Haskell.</p>
+      </div>
+
+      <div class="row">
+
+      <div class="col-sm-8 blog-main">
           $body$
-       </div>
       </div>
-</div>
+      
+      <!-- Right Bar -->
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Mission</h4>
+            <p>Condividere la passione per il linguaggio di programmazione Haskell e la programmazione funzionale in generale, attraverso gruppi di discussione, progetti condivisi, e meetup.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Contatti</h4>
+            <ol class="list-unstyled">
+               <li>
+                <a href="mailto:info@haskell-ita.it">email: info@haskell-ita.it</a>
+              </li>
+              <li><a href="https://twitter.com/Haskell_ITA"><i class="icon-twitter icon-small"></i> Twitter</a></li>
 
-<footer>
-  <a name="footer"></a>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <ul class="list-inline banner-social-buttons">
+              <li><a href="https://www.facebook.com/groups/ItaloHaskell/"><i class="icon-facebook icon-small"></i> Facebook</a></li>
 
-        <li><a class="btn btn-default" href="https://twitter.com/Haskell_ITA"><i class="icon-twitter icon-small"></i> Twitter</a></li>
+              <li><a href="https://www.linkedin.com/grp/home?gid=8317756"><i class="icon-linkedin icon-medium"></i> Linkedin</a>
+              </li>
+              <li>
+                <a href="https://github.com/Haskell-ITA"><i class="icon-github icon-medium"></i> GitHub</a>
+              </li>
 
-       <li><a class="btn btn-default" href="https://www.facebook.com/groups/ItaloHaskell/"><i class="icon-facebook icon-small"></i> Facebook</a></li>
+              <li>
+                <a href="https://groups.google.com/forum/#!forum/haskell_ita"><i class="glyphicon glyphicon-envelope icon-large"></i> Mailing List</a>
+              </li>
 
-       <li><a class="btn btn-default" href="https://www.linkedin.com/grp/home?gid=8317756"><i class="icon-linkedin icon-medium"></i> Linkedin</a>
-       </li>
-        <li>
-       <a class="btn btn-default" href="https://github.com/Haskell-ITA" class="btn btn-default btn-lg"><i class="icon-github icon-medium"></i> GitHub</a>
-       </li>
+              <li>
+                <a href="/atom.xml"><i class="icon-rss icon-medium"></i> RSS Feeds</a>
+              </li>
 
-       </ul>
-        <ul class="list-inline banner-social-buttons">
-       <li>
-       <a class="btn btn-default" href="https://groups.google.com/forum/#!forum/haskell_ita"><i class="glyphicon glyphicon-envelope icon-large"></i> Mailing List</a>
-       </li>
+              <li>
+                <a href="http://webchat.freenode.net/?channels=%23haskell.it"> IRC</a>
+              </li>
+              <li>
+                <a href="/about/index.html#members">Membri della community</a>
+              </li>
 
-       <li>
-       <a class="btn btn-default" href="/atom.xml"><i class="icon-rss icon-medium"></i> RSS Feeds</a>
-       </li>
 
-       <li>
-       <a class="btn btn-default" href="http://webchat.freenode.net/?channels=%23haskell.it"> IRC</a>
-       </li>
+          </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
 
-       <li>
-         <a class="btn btn-default" href="mailto:info@haskell-ita.it"><i class="glyphicon glyphicon-envelope icon-large"></i> Email</a>
-       </li>
-       
-       </ul>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.haskell-ita.it" property="cc:attributionName" rel="cc:attributionURL">Haskell-ITA</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-      </div>
-    </div>
 
-</footer>
-</body>
+    <footer class="blog-footer">
+      <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.haskell-ita.it" property="cc:attributionName" rel="cc:attributionURL">Haskell-ITA</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>This website is generated by <a href="https://jaspervdj.be/hakyll/">Hakyll</a>. The website source code is on this <a href="https://github.com/Haskell-ITA/www_haskell-ita_it_website">GitHub repository</a>. 
+
+    </footer>
+  </body>
 </html>
