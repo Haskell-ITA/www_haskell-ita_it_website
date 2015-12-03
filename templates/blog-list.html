@@ -2,7 +2,11 @@ $for(blogs)$
 
 <div class="blog-post">
   <h2 class="blog-post-title"><a href="$url$">$title$</a></h2>
+
+  <!--
   <p class="blog-post-meta">$date$ in $category$ - <a href="$url$#disqus_thread"><i class="fa fa-comment"></i>comments</a></p>
+  -->
+  <p class="blog-post-meta">$date$ in $category$ </a></p>
 $if(teaser)$
 $teaser$
 $else$
@@ -41,6 +45,7 @@ $endfor$
 </nav>
 
 <!-- disqus comment count script -->
+<!--
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   var disqus_shortname = 'haskellita'; // required: replace example with your forum shortname
@@ -52,3 +57,5 @@ $endfor$
       (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   }());
 </script>
+-->
+
