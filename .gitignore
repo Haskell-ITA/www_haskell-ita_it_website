@@ -4,3 +4,5 @@ dist/
 TAGS
 tmp/
 .stack-work
+.cabal-sandbox/
+cabal.sandbox.config
