@@ -199,7 +199,7 @@ Ok la matematica paga ancora. Inoltre da un `diff t2.log t3.log` si vede che il 
 Low Lewel Optimization: IntSet
 ------------------------------
 
-Veniamo alla prima low-level optimization, in cui invece di migliorare l'algoritmo matematico sfruttando propietà del nostro problema, iniziamo a convertire il codice in codice equivalente ma più efficiente da eseguire. Quindi passiamo dal dominio dei numeri a quello delle CPU, cache, RAM e quant'altro.
+Veniamo alla prima low-level optimization, in cui invece di migliorare l'algoritmo matematico sfruttando proprietà del nostro problema, iniziamo a convertire il codice in codice equivalente ma più efficiente da eseguire. Quindi passiamo dal dominio dei numeri a quello delle CPU, cache, RAM e quant'altro.
 
 I Set in Haskell sono una struttura dati generica che accetta come chiave di ordinamento ogni type di tipo `Ord`. La chiave è memorizzata come un puntatore ad un Int. Ma un Int è compatto quanto un puntatore, quindi già che ci siamo possiamo memorizzare direttamente l'Int nel Set, invece che il suo puntatore, risparmiando una operazione di deferenza ad ogni accesso.
 
@@ -225,7 +225,7 @@ Sempre massimo_zaniboni nel tentativo di ergersi a pulce bipede, sulla spalla di
 >             
 >     in foldl' addMults1 ISet.empty uniquePrimitives 
 
-Notiamo che si costruisce il Set usando `fromDistinctAscList` che sfrutta la propietà che gli elementi della lista sono crescenti, e usa un algoritmo più veloce. Si usa inoltre `union` fra Set che sfrutta propietà del Set per velocizzare l'operazione.
+Notiamo che si costruisce il Set usando `fromDistinctAscList` che sfrutta la proprietà che gli elementi della lista sono crescenti, e usa un algoritmo più veloce. Si usa inoltre `union` fra Set che sfrutta propietà del Set per velocizzare l'operazione.
 
 I tempi passano da 3s per 10^6 a
 
