@@ -106,9 +106,11 @@ The hosting server will make a pull, and publish the content of `_site/` directo
 
 ### Known Problems
 
-If you miss the tag `date`, Hakyll generates a not clear error message like:
+If you miss the tag `date`, and `author` Hakyll generates a not clear error message like:
 
      [ERROR] Missing field $posts$ in context for item 3/index.html
+
+In case of community pages uses `community` as author.
 
 ## Project Roadmap (TODO)
 

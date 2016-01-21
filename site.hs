@@ -170,6 +170,11 @@ feedsCtx =
    where
       cdataContext = mapContext (\s -> "<![CDATA[" <> s <> "]]>")
 
+getPeople :: MonadMetadata m => Identifier -> m [String]
+getPeople identifier = do
+  metadata <- getMetadata identifier
+  return $ maybe [] (map trim . splitAll ",") $ M.lookup "author" metadata
+
 --------------------------------------------------------------------------------
 -- ROUTES
 --------------------------------------------------------------------------------

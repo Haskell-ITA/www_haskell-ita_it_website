@@ -1,6 +1,7 @@
 ---
 title: Installazione ambiente Haskell
 tags: knowledge-base, tools
+author: community
 date: 2015-01-01
 ---
 

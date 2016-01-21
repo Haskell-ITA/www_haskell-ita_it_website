@@ -1,6 +1,7 @@
 ---
 title: Proposte per attività collaborative
 date: 2015-11-01
+author: community
 tags: projects
 ---
 

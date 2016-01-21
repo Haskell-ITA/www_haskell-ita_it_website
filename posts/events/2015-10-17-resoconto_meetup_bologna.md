@@ -1,6 +1,7 @@
 ---
 title: Meetup Bologna (Autunno 2015)
 date: 2015-10-17
+author: community
 tags: meetups
 ---
 Ci siamo trovati a Bologna, Sabato 17 Ottobre, presso [T3Lab](http://www.t3lab.it), e sponsorizzati da [BioDec](http://www.biodec.com/).
