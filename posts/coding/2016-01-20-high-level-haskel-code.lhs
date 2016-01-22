@@ -1,11 +1,11 @@
 ---
-title: Applicative Fold
+title: Studio di codice Haskell high-level 
 author: Massimo Zaniboni <massimo.zaniboni@gmail.com>
 date: 2016-10-20
 tags: coding
 ---
 
-In questo post provo a ricostruire parte del lavoro di studio, fatto insieme a Francesco (Franciman su IRC), di una libreria MVC per Haskell, scritta da Gariel Gonzaleg, pubblicata su [http://hackage.haskell.org/package/mvc](http://hackage.haskell.org/package/mvc) e descritta in [http://www.haskellforall.com/2014/04/model-view-controller-haskell-style.html](http://www.haskellforall.com/2014/04/model-view-controller-haskell-style.html).
+La libreria [Haskell-MVC](http://hackage.haskell.org/package/mvc) scritta da Gabriel Gonzaleg, è un ottimo esempio di codice Haskell d'alto livello, scritto da una persona sicuramente intelligente e che padroneggia il linguaggio. La libreria è usata in questo post solo come punto di partenza e pretesto per capire quanto sia facile o difficile studiare il codice Haskell scritto da altri, e non verrà trattata nella sua interezza, anzi quasi per niente.
 
 La libreria definisce una View come 
 
@@ -14,9 +14,9 @@ La libreria definisce una View come
 >
 > newtype View a = AsFold (FoldM IO a ())
 
-<div></div><!--more-->
+`FoldM` è un data-type definito in `Control.Foldl`. 
 
-Quindi `AsFold` è un tag che identifica il data-type, mentre `FoldM` è un data-type definito in `Control.Foldl`.
+<div></div><!--more-->
 
 Control.Foldl
 -------------
@@ -36,7 +36,9 @@ Quindi siccome è "like Fold", questa è la `Fold`:
 > -}
 > data Fold a b = forall x . Fold (x -> a -> x) x (x -> b)
 
-Quindi la prima funzione `x -> a -> x` è da considerarsi come una funzione di fold, che accetta uno stato di elaborazione intermedio `x`, un elemento della "lista" `a` e torna il nuovo stato intermedio. Segue lo stato iniziale di elaborazione, come nella `fold`. La seconda funzione è invece una funzione finale che viene usata per convertire lo stato finale della `fold` nel risultato finale voluto. E infatti abbiamo questa funzione che esegue una `Fold`, come se fosse una `fold`:
+Quindi la prima funzione `x -> a -> x` è da considerarsi come una funzione di fold, che accetta uno stato di elaborazione intermedio `x`, un elemento della "lista" `a` e torna il nuovo stato intermedio. Segue lo stato iniziale di elaborazione, come nella `fold`. La seconda funzione è invece una funzione finale che viene usata per convertire lo stato finale della `fold` nel risultato finale voluto.
+
+E infatti abbiamo questa funzione che esegue una `Fold`, come se fosse una `fold`:
 
 > -- | Apply a strict left 'Fold' to a 'Foldable' container
 > fold :: Foldable f => Fold a b -> f a -> b
@@ -48,7 +50,7 @@ Quindi con `Data.Foldl.fold` possiamo passare ad una `Fold` un container foldabl
 
 Control.Foldl e Applicative
 ---------------------------
- 
+
 Lo scopo di `Fold` è quello di scrivere codice che combina due o più funzioni di fold, come
 
 > average :: Num b => Fold b b
@@ -75,6 +77,8 @@ Le regole di combinazione delle operazioni della `Fold` permettono invece di sca
 >   = let (s,l ) = foldl (\(s1, l1) x -> (s1 + x, l1 + 1)) (0, 0) fs
 >     in  s / l
 
+
+ 
 Questo grazie all'implementazione di `Applicative` da parte della `Fold`:
 
 > data Pair a b = Pair !a !b
@@ -97,10 +101,6 @@ Alla luce di questo riguardiamo il codice di esempio
 
     average :: Num b => Fold b b 
     average = (/) <$> sum <*> genericLength
-
-Notiamo l'uso di operatori `<$>`, `<*>`. Questi operatori, insieme a `<>` usato per i `Monoid` identificano la combinazione di valori fra di loro. Tutte queste combinazioni hanno un elemento neutro, e rispettano la propietà associativa, e altre propietà. Operazioni di questo tipo sono facili da capire per le persone, e presentano poche brutte sorprese, dato che l'ordine di esecuzione non cambia il risultato finale.
-
-In questo caso invece di combinare valori in senso stretto, si combinano in un certo senso funzioni (la `Fold` contiene al suo interno delle funzioni). Ma in Haskell le funzioni sono first-class-citzien e quindi la cosa è lecita, e nel caso di codice Haskell evoluto, è una prassi. Quindi con questo codice combiniamo tre funzioni, per creare la funzione `average`, espressa non direttamente come funzione, ma come `Fold`.
 
 L'operatore `<$>` è un sinonimo della `fmap` dei `Functor`. La `Fold` è un `Functor`, quindi è sia in grado di memorizzare un valore di tipo `x`, che di applicare al valore una generica funzione `x -> y`. La definizione di `Functor` è:
 
@@ -135,8 +135,8 @@ Vediamo la seconda parte
 In questo caso `<*>` è l'operatore usato per combinare fra di loro due valori (funzioni nel nostro caso) di tipo `Applicative`. Questa la definizione di `Applicative`:
  
      class (Functor f) => Applicative f where
-      pure  :: a -> f a
-      (<*>) :: f (a -> b) -> f a -> f b
+       pure  :: a -> f a
+       (<*>) :: f (a -> b) -> f a -> f b
 
 La definizione di `<*>` è molto simile a quella di `<$>` solo che invece di avere `a -> b`, abbiamo `f (a -> b)` come primo argomento. Cosa comporta questo in pratica? Comporta che quando si torna il risultato `f b`, il risultato oltre a dipendere da `f a`, può anche dipendere da `f (a -> b)` e quindi anche dalla struttura del functor `f` usato come primo argomento in modo esplicito. Quindi se si usa come `Functor` un vettore, e si implementa per esempio la moltiplicazione di matrici, allora il numero di colonne e linee del vettore risultato possono dipendere dal numero di linee e colonne dei due vettori sorgenti. Nel caso di un `Functor` e della funzione `fmap` non era mai possibile cambiare la struttura del `Functor`.
 
@@ -166,10 +166,6 @@ Nel caso della combinazione `<*>`, viene tornata una `Fold` finale in cui lo sta
 
 Lo stato finale della `Fold` ha la forma `(doneL xL) (doneR xR)` ed è in realtà una applicazione di funzione. Ovvero `(doneL xL)` è una funzione. E la cosa ha senso, dato che abbiamo visto che possiamo creare un `Fold (a -> b)` solo usando `pure` e `pure` inserisce la funzione nell'ultimo elemento della `Fold`. Tornando all'esempio, `doneL` è una funzione, nel nostro caso `((/) <$> sum)` torna nel risultato finale una funzione che accetta un valore `Num b` e esegue la divisione con la `sum` di tutta la lista. Alla funzione `(doneL xL)` passiamo `(doneR xR)` che nel nostro caso è `genericLength`.
 
-Ecco a questo punto a me sta già scoppiando la testa, dato che non sono matematico di professione, non sono abile nel term-rewriting e non riesco veramente a raffigurarmi tutto. Se avessi dovuto scrivere io questo codice, probabilmente avrei prodotto una linea al giorno. Ovviamente usarlo invece che scriverlo è nettamente più semplice, a patto che ci si fidi dei commenti, e non si cerchi troppo di capirne il funzionamento dietro le quinte. Almeno questo vale per me. Ma che senso hanno tutte queste complicazioni? Nell'aproccio Haskell se uno definisce una `Fold` come una `Applicative` o `Monoid` o `Functor` e così via, allora eredita in automatico tutte le propietà delle classi e tutte le funzioni di supporto. Quindi può usare il linguaggio che usa per le `Applicative`, anche per la sua `Fold`, senza doversi inventare delle nuove funzioni o concetti. Come in matematica si cerca con l'algebra di riunire in leggi e tipi comuni diverse operazioni matematiche che hanno una struttura comune, così in Haskell si cerca di unificare strutture dati che hanno una struttura semantica simile. Il codice risultante è estremamente compatto, ma anche denso, e occorre rinfrescarsi spesso i concetti base, dato che ogni dettaglio conta. 
- 
-Se si studia [http://hackage.haskell.org/package/foldl-1.0.7/docs/src/Control-Foldl.html](http://hackage.haskell.org/package/foldl-1.0.7/docs/src/Control-Foldl.html) si possono aprezzare le ulteriori definizioni "matematiche" legate alla `Fold`, che si ereditano in automatico ogni volta che si definisce qualcosa in termini di `Fold`.
-
 View e Monoid
 -------------
 
@@ -191,13 +187,28 @@ Un `Monoid` è una struttura definita come:
 
 e per cui valgono la propietà associativa e esiste un elemento neutro. I numeri Interi sono Monoid, e lo sono rispetto la somma o la moltiplicazione, tra le altre cose. Le liste sono Monoid e lo sono rispetto alla concatenazione.
  
-Siccome una View è un Monoid, allora possiamo sempre combinare due View e ottenere una nuova View. Il che rende la View un tipo di dato molto comodo da usare e estremamente componibile. Come tutti i Monoid del resto: tutti abbiamo imparato a sommare e sottrarre mele o pere alle elementari.
+Siccome una View è un Monoid, allora possiamo sempre combinare due View e ottenere una nuova View. Il che rende la View un tipo di dato molto comodo da usare e estremamente componibile. Come tutti i Monoid del resto.
+
+A cosa servono Functor e Applicative?
+-------------------------------------
+
+Definire una `Fold` come un `Applicative` o `Functor` o un `Monoid`, permettere di ereditare tutte le propietà delle classi e tutte le funzioni di supporto. Si possono riusare i concetti tipici di un `Functor` e di un `Applicative`, senza doversene inventare di nuovi e ad-hoc. Lo stesso accade in matematica, quando in algebra (per non parlare della category theory) si definiscono le operazioni matematiche  in base alla struttura che hanno, e si ereditano in automatico tutte le propietà e teoremi che valgono sulla struttura a cui sono state associate.
+
+Se si studia [http://hackage.haskell.org/package/foldl-1.0.7/docs/src/Control-Foldl.html](http://hackage.haskell.org/package/foldl-1.0.7/docs/src/Control-Foldl.html) si possono aprezzare le ulteriori definizioni "matematiche" legate alla `Fold`, che si ereditano in automatico ogni volta che si definisce qualcosa in termini di `Fold`.
+
+Inoltre `Functor`, `Applicative` e  `Monoid` rispettano la propietà associativa e hanno un elemento neutro. Questo fa si che abbiano un comportamento facile da prevedere per chi programma e che siano facilmente componibili fra di loro.
 
 Conclusioni
 -----------
 
-Lo studio della libreria MVC potrebbe continuare per pagine e pagine, dato che pur essendo molto corta, ha decine di queste definizioni, che poi si rifanno a classi e funzioni generiche. Per esempio ci sono funzioni per trasformare una Pipe in un Controller e quindi partendo da una astrazione ben sviluppata di Haskell (le Pipes) è possibile derivare Controllers o Views. Il codice trasforma funzioni in funzioni con una semantica simile, ma in un contesto diverso, in modo molto elegante. 
+Il codice Haskell d'alto livello (scritto da persone intelligenti e che sanno il fatto loro) è da una parte molto compatto, ma è anche purtroppo molto denso e difficile da capire, dato che le definizioni di nuove funzioni e strutture dati si riferiscono a concetti descritti in altri package, e che spesso non sono per niente banali. L'aproccio assomiglia alla costruzione di teorie matematiche in cui ogni definizione si rifà ai concetti e definizioni introdotte precedentenmente, e quindi è facile perdersi dopo un pó, se non si ripassano continuamente le definizioni precedenti.
 
-Le mie conclusioni: il codice Haskell d'alto livello (scritto da persone intelligenti e che sanno il fatto loro) è notevolmente riusabile, e con una granularità molto fine. Però allo stesso tempo è difficile da capire, dato che le definizioni di nuove funzioni e strutture dati, pur essendo molto compatte, sono anche dense, poichè si riferiscono a concetti descritti in altri package. L'aproccio assomiglia un pó alla costruzione di teorie matematiche in cui ogni definizione si rifà ai concetti e definizioni introdotte precedentenmente, e dove è facile perdersi dopo un pó.
+Probabilmente le IDE dovrebbero aiutare di più permettendo di:
 
-Nel progetto [https://github.com/Haskell-ITA/lazy-gui-choice](https://github.com/Haskell-ITA/lazy-gui-choice) a cui siete tutti invitati a partecipare, io e Francesco stiamo provando a vedere se è possibile usare Haskell in modalità MVC, creando eventualmente quello che manca.
+* espandere in modalità lettura/studio i tipi intermedi durante la combinazione di funzioni;
+* navigare velocemente nelle definizioni di tipi;
+* suggerire funzioni di trasformazione di tipi, in stile Hoogle, in modo da accedere in modo pratico all'ampio vocabolario di funzioni disponibili per ogni classe;
+* istanziare codice generico, applicandolo a tipi e valori specifici usati come esempio, per "toccare con mano" il risultato finale, senza dover eseguire il term-rewriting mentalmente;
+* altre ed eventuali: in pratica tutto quello che può aiutare nello studio di una teoria matematica / codice Haskell;
+
+La buona notizia è che il riuso di codice Haskell è sicuramente superiore al riuso di codice object-oriented, dato che librerie Haskell che eseguono compiti complessi, hanno pochissime linee di codice, e riusano concetti definiti in altri packages, con una granularità di riuso molto più fine del tipico codice object-oriented.
