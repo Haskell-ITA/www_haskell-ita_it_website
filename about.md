@@ -36,11 +36,4 @@ Chi è autore di post relativi ad Haskell può comunicarlo e una copia del post 
 
 <a name="members"></a>
 
-## Membri della Community
-
-Per facilitare la collaborazione, ecco un elenco non esaustivo di membri della community e di siti a loro collegati. NOTA: Chi vuole aggiungersi lo faccia direttamente modificando questa pagina da GitHub o lo chieda in mailing-list.
-
-* Massimo Zaniboni, [GitHub](https://github.com/massimo-zaniboni)
-
-
 
