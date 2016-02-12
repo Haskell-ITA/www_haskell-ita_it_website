@@ -26,13 +26,13 @@ TODO inserire dettagli talk di Luca. Ci saranno esercizi o talk puro con domande
 
 #### Coding with Mentor 
 
-La proposta è di fare dei gruppetti di lavoro ristretti (2-6 persone, ideale 3-4) per lavorare su qualcosa di concreto, approfondire la conoscienza del linguaggio attraverso il confronto e divertirsi un pó rispetto ad un talk passivo. 
+La proposta è di fare dei gruppetti di lavoro ristretti (2-6 persone, ideale 3-4) per lavorare su qualcosa di concreto, approfondire la conoscienza del linguaggio attraverso il confronto e divertirsi un pó. 
 
-Invece di avere un esercizio/progetto comune, si è pensato di creare diversi gruppi con un mentor che propone lui il tema e fa un pó da guida (mentor).
+Invece di avere un esercizio/progetto comune, si è pensato di fare gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida.
 
-Portate quindi il portatile, con un ambiente Haskell.
+Portate quindi il portatile, con un ambiente Haskell. Il fine è puramente didattico, quindi nessuna ansia da prestazione legata al codice finale prodotto.:-)
 
-TODO è una proposta, sembra passata, ma si accettano critiche e contro proposte.
+TODO è una proposta, ma si accettano critiche e contro proposte.
 
 ##### Proposta Luca 
 
