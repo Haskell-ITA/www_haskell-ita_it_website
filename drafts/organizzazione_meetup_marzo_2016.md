@@ -24,11 +24,11 @@ TODO preparare locandina evento, da dare Pasqualino Assini da distribuire nelle 
 
 TODO inserire dettagli talk di Luca. Ci saranno esercizi o talk puro con domande?
 
-#### Coding 
+#### Coding with Mentor 
 
 La proposta è di fare dei gruppetti di lavoro ristretti (2-6 persone, ideale 3-4) per lavorare su qualcosa di concreto, approfondire la conoscienza del linguaggio attraverso il confronto e divertirsi un pó rispetto ad un talk passivo. 
 
-Invece di avere un esercizio/progetto comune, si è pensato di creare diversi gruppi con un mentor che propone lui il tema e fa un pó da guida.
+Invece di avere un esercizio/progetto comune, si è pensato di creare diversi gruppi con un mentor che propone lui il tema e fa un pó da guida (mentor).
 
 Portate quindi il portatile, con un ambiente Haskell.
 
