@@ -1,20 +1,18 @@
-## Meetup Marzo 2016
-
-Documento in stile work-in-progress per l'organizzazione del Meetup Haskell-ITA di Marzo 2016.
+## Haskell Day Firenze
 
 ### Quando e Dove
 
-Saremo ospitati da https://www.develer.com/
+Sabato 26 Marzo, dalle 10:00 alle 18:00, presso https://www.develer.com/
 
     Develer Srl
     via Mugellese 1/A
     50013 Campi Bisenzio - Firenze - Italia
 
-TODO indicare data precisa. Guardando il Doodle sarà l'ultimo o penultimo Sabato di Marzo
-
-TODO indicare orari treno che va da Firenze centrale a Develer.
-
-TODO indicare orario di fine preciso, di modo che le persone possano prenotare il treno preciso e poter fare il viaggio di ritorno insieme
+Per chi viene in treno:
+* arrivo a Firenze Santa Maria Novella
+* ci sono treni frequenti per Calenzano: 8:28, 8:47; 9:10. Il treno delle 9:10 ferma a Prato e poi bisogna cambiare con il treno che va a Calenzano: 36 minuti di viaggio in totale, comprensivi di 10 minuti di attesa per il cambio. Gli altri treni ci mettono 24 minuti e non hanno cambi intermedi.
+* 750 metri a piedi (10 minuti) https://goo.gl/maps/fkUVZQhLsbC2
+* per il ritorno c'e\` il treno Calenzano -> Prato -> cambio con attesa 12 minuti -> Firenze delle 18:14 che impiega 36 minuti in totale, e arrivo a Firenze alle 18.50. 
 
 TODO preparare locandina evento, da dare Pasqualino Assini da distribuire nelle bacheche delle università e simili
 
