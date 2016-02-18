@@ -12,7 +12,7 @@ Per chi viene in treno:
 * arrivo a Firenze Santa Maria Novella
 * ci sono treni frequenti per Calenzano: 8:28, 8:47; 9:10. Il treno delle 9:10 ferma a Prato e poi bisogna cambiare con il treno che va a Calenzano: 36 minuti di viaggio in totale, comprensivi di 10 minuti di attesa per il cambio. Gli altri treni ci mettono 24 minuti e non hanno cambi intermedi.
 * 750 metri a piedi (10 minuti) https://goo.gl/maps/fkUVZQhLsbC2
-* per il ritorno c'e\` il treno Calenzano -> Prato -> cambio con attesa 12 minuti -> Firenze delle 18:14 che impiega 36 minuti in totale, e arrivo a Firenze alle 18.50. 
+* per il ritorno c'e\` il treno delle 18:14, Calenzano -> Prato -> cambio con attesa 12 minuti -> Firenze, che impiega 36 minuti in totale, e arrivo a Firenze alle 18.50. 
 
 TODO preparare locandina evento, da dare Pasqualino Assini da distribuire nelle bacheche delle università e simili
 
