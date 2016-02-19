@@ -2,7 +2,7 @@
 
 L'evento è presentato in questo [post del blog](http://www.haskell-ita.it/2016/02/organizzazione-meetup-marzo-2016/).
 
-Questa pagina serve per collaborare nella stesura del programma dettagliato. Siete tutti liberi di dire la vostra attraverso pull request, interventi in mailing-list o IRC.
+Questa pagina serve per collaborare nella stesura del programma dettagliato. Siete tutti liberi di dire la vostra attraverso merge requests, interventi in mailing-list o IRC.
 
 ### Programma
 

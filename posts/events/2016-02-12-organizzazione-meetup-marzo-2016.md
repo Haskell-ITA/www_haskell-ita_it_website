@@ -26,9 +26,7 @@ Per chi viene in treno:
 
 ### Programma
 
-Nella prima parte ci saranno uno o più talk, con relativa discussione di gruppo. 
+Questo è il terzo evento del gruppo dei programmatori Haskell Italiani. A differenza dei due precedenti, vogliamo concentrarci un po' più sull'aspetto pratico, quindi ci saranno un sacco di occasioni di sperimentare la programmazione funzionale pura direttamente sul proprio portatile. La proposta è di fare dei gruppetti di lavoro ristretti (2-6 persone, ideale 3-4) per lavorare su qualcosa di concreto, approfondire la conoscenza del linguaggio attraverso il confronto e divertirsi un po'. È importante avere già l'ambiente preparato seguendo questa guida [http://haskell-ita.it/2015/01/Installare_Haskell/](http://haskell-ita.it/2015/01/Installare_Haskell/).
 
-A seguire si faranno dei gruppetti di lavoro ristretti (2-6 persone) che lavoreranno su qualcosa di concreto, al fine di approfondire la conoscienza del linguaggio, confrontarsi e divertirsi un po'.
-
-I dettagli del meetup sono su [questa pagina condivisa](https://github.com/Haskell-ITA/www_haskell-ita_it_website/blob/master/drafts/organizzazione_meetup_marzo_2016.md). Potete dire la vostra riguardo l'organizzazione, scrivendo in Mailing List, oppure modificando direttamente la pagina condivisa.
+I dettagli del programma sono su [questa pagina condivisa](https://github.com/Haskell-ITA/www_haskell-ita_it_website/blob/master/drafts/organizzazione_meetup_marzo_2016.md). Potete dire la vostra riguardo l'organizzazione, scrivendo in Mailing List, oppure modificando direttamente la pagina condivisa.
 
