@@ -1,24 +1,12 @@
 ## Haskell Day Firenze
 
-### Quando e Dove
+L'evento è presentato in questo [post del blog](http://www.haskell-ita.it/2016/02/organizzazione-meetup-marzo-2016/).
 
-Sabato 26 Marzo, dalle 10:00 alle 18:00, presso https://www.develer.com/
-
-    Develer Srl
-    via Mugellese 1/A
-    50013 Campi Bisenzio - Firenze - Italia
-
-Per chi viene in treno:
-* arrivo a Firenze Santa Maria Novella
-* ci sono treni frequenti per Calenzano: 8:28, 8:47; 9:10. Il treno delle 9:10 ferma a Prato e poi bisogna cambiare con il treno che va a Calenzano: 36 minuti di viaggio in totale, comprensivi di 10 minuti di attesa per il cambio. Gli altri treni ci mettono 24 minuti e non hanno cambi intermedi.
-* 750 metri a piedi (10 minuti) https://goo.gl/maps/fkUVZQhLsbC2
-* per il ritorno c'e\` il treno delle 18:14, Calenzano -> Prato -> cambio con attesa 12 minuti -> Firenze, che impiega 36 minuti in totale, e arrivo a Firenze alle 18.50. 
-
-TODO preparare locandina evento, da dare Pasqualino Assini da distribuire nelle bacheche delle università e simili
+Questa pagina serve per collaborare nella stesura del programma dettagliato. Siete tutti liberi di dire la vostra attraverso pull request, interventi in mailing-list o IRC.
 
 ### Programma
 
-Nella prima parte ci saranno uno o piu` talk, con relativa discussione di gruppo. A seguire si faranno dei gruppetti di lavoro ristretti (2-6 persone) che lavoreranno su qualcosa di concreto, al fine di approfondire la conoscienza del linguaggio, confrontarsi e divertirsi un po'.
+Nella prima parte ci saranno uno o più talk, con relativa discussione di gruppo. A seguire si faranno dei gruppetti di lavoro ristretti (2-6 persone) che lavoreranno su qualcosa di concreto, al fine di approfondire la conoscienza del linguaggio, confrontarsi e divertirsi un po'.
 
 #### Talk
 
@@ -105,3 +93,6 @@ Sulla base di un vecchio post di Luca, mi piacerebbe studiare (anche senza mento
 
 TODO Sentitevi liberi di proporre quello che preferite, qua o in Mailing-List
 
+## TODO Vari
+
+TODO preparare locandina evento, da dare Pasqualino Assini da distribuire nelle bacheche delle università e simili
