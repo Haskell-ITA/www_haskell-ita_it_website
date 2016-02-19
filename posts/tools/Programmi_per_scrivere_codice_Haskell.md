@@ -81,25 +81,25 @@ Stack è uscito da poco, quindi serve un minimo di impegno per farlo lavorare co
 
 2) Aggiungete al vostro `PATH` la cartella che contiene l'eseguibile `ghc`; io ho messo nel mio `.bashrc`:
 
-    PATH=~/.local/bin:~/.stack/programs/x86_64-linux/ghc-7.10.2/bin:$PATH
+        PATH=~/.local/bin:~/.stack/programs/x86_64-linux/ghc-7.10.2/bin:$PATH
     
 3) Modificare il file `~/.stack/global/stack.yaml` facendolo diventare:
 
-    flags: {}
-    packages: []
-    extra-deps:
-    - cabal-helper-0.6.1.0
-    resolver: lts-3.8
+        flags: {}
+        packages: []
+        extra-deps:
+        - cabal-helper-0.6.1.0
+        resolver: lts-3.8
 
 4) `stack install stylish-haskell hasktags hlint ghc-mod hindent`
 
 5) Attivate il layer haskell nel vostro `~/.spacemacs` in maniera che sia come:
 
-    (haskell :variables
-             haskell-enable-hindent-style "gibiansky"
-             haskell-process-type 'stack-ghci
-             haskell-tags-on-save nil
-             haskell-process-log t
-             haskell-process-suggest-haskell-docs-imports nil)
+        (haskell :variables
+                 haskell-enable-hindent-style "gibiansky"
+                 haskell-process-type 'stack-ghci
+                 haskell-tags-on-save nil
+                 haskell-process-log t
+                 haskell-process-suggest-haskell-docs-imports nil)
 
 (per capire cosa si intende con layer e come aggiungerli, leggete la [guida di spacemacs](https://github.com/syl20bnr/spacemacs)
