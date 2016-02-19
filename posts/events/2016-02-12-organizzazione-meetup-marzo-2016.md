@@ -19,6 +19,7 @@ Per chi viene in treno:
 * ci sono treni frequenti per Calenzano: 8:28, 8:47; 9:10. Il treno delle 8:47 impiega 24 minuti e non effettua cambi intermedi. Il treno delle 9:10 ferma a Prato, poi bisogna cambiare con il treno che va a Calenzano: 36 minuti di viaggio in totale, comprensivi di 10 minuti di attesa per il cambio. 
 * 750 metri a piedi (10 minuti) per raggiungere la sede di Develer [Google Map](https://goo.gl/maps/fkUVZQhLsbC2)
 * per il ritorno c'è il treno delle 18:14. Anche questo treno si dirige prima a Prato, poi un'attesa di 12 minuti per il cambio, e poi si prende il treno per Firenze. 36 minuti di viaggio in totale, comprensivo di attesa per il cambio. Arrivo alla stazione di Firenze alle 18:50.
+* suggerimenti: oltre a Trenitalia, verificate anche gli orari e le tariffe di Italo. Spesso prenotando con un certo anticipo il biglietto ferroviario, si spende meno rispetto ad un last-minute. 
 
 ### Iscrizione
 
@@ -26,7 +27,9 @@ Per chi viene in treno:
 
 ### Programma
 
-Questo è il terzo evento del gruppo dei programmatori Haskell Italiani. A differenza dei due precedenti, vogliamo concentrarci un po' più sull'aspetto pratico, quindi ci saranno un sacco di occasioni di sperimentare la programmazione funzionale pura direttamente sul proprio portatile. La proposta è di fare dei gruppetti di lavoro ristretti (2-6 persone, ideale 3-4) per lavorare su qualcosa di concreto, approfondire la conoscenza del linguaggio attraverso il confronto e divertirsi un po'. È importante avere già l'ambiente preparato seguendo questa guida [http://haskell-ita.it/2015/01/Installare_Haskell/](http://haskell-ita.it/2015/01/Installare_Haskell/).
+Questo è il terzo evento del gruppo dei programmatori Haskell Italiani. A differenza dei due precedenti, vogliamo concentrarci un po' più sull'aspetto pratico, quindi ci saranno un sacco di occasioni di sperimentare la programmazione funzionale pura direttamente sul proprio portatile. La proposta è di fare dei gruppetti di lavoro ristretti (2-6 persone, ideale 3-4) per lavorare su qualcosa di concreto, approfondire la conoscenza del linguaggio attraverso il confronto e divertirsi un po'. 
 
-I dettagli del programma sono su [questa pagina condivisa](https://github.com/Haskell-ITA/www_haskell-ita_it_website/blob/master/drafts/organizzazione_meetup_marzo_2016.md). Potete dire la vostra riguardo l'organizzazione, scrivendo in Mailing List, oppure modificando direttamente la pagina condivisa.
+È importante avere già l'ambiente preparato seguendo questa guida [http://haskell-ita.it/2015/01/Installare_Haskell/](http://haskell-ita.it/2015/01/Installare_Haskell/).
+
+[Dettagli Programma](https://github.com/Haskell-ITA/www_haskell-ita_it_website/blob/master/drafts/organizzazione_meetup_marzo_2016.md). 
 
