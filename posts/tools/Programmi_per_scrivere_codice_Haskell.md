@@ -58,6 +58,39 @@ vostro `.vimrc` (dall'utente #haskell merijin)
 Se cercate una IDE Haskell che usa Vim come editor, ci sono [haskell-vim-now](https://github.com/begriffs/haskell-vim-now) e
 [ghcmod-vim](https://github.com/eagletmt/ghcmod-vim).
 
+### [Neovim](https://neovim.io/) (istruzioni per Linux)
+
+Questo fork di `vim` permette di scrivere plugin asincroni con maggior facilità, in modo da non
+bloccare l'interfaccia grafica per esempio quando si compila e controlla un file haskell.
+
+Da qualche mese `neovim` segue le XDG specification per cui il file di configurazione non
+è più `~/.nvimrc` ma `~/.config/nvim/init.vim` (vedi [qui](https://github.com/neovim/neovim/wiki/Following-HEAD#20151026)
+per maggiori dettagli).
+
+Dopo aver installato [stack](http://docs.haskellstack.org/en/stable/README.html) bisogna installare
+i tool necessari per controllare il codice:
+
+    $ stack install ghc-mod hlint hdevtools
+
+(assicurati di avere `~/.local/bin/` nel `$PATH`)
+
+Installa [vim-plug](https://github.com/junegunn/vim-plug) per gestire i (pochi) plugin
+necessari.
+
+Poi nel file `init.vim` inserisci:
+
+    call plug#begin('~/.config/nvim/plugged')
+    Plug 'benekastah/neomake'  " Make asincrono
+    Plug 'airblade/vim-rooter' " Ghc-mod restituisce sempre path assoluti
+    call plug#end()
+
+    autocmd! BufWritePost * Neomake " Controlla il file dopo ogni Write
+
+Poi installa i plugin aprendo `nvim` e chiamando `:PlugInstall`
+
+Ora aprendo e salvando un file haskell `neomake` dovrebbe automaticamente segnalare gli errori
+grazie a `ghc-mod`, `hdevtools` e `hlint`.
+
 ## Soluzioni complete ma complesse
 
 ### Emacs
