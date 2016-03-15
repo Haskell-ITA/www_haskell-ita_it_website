@@ -10,15 +10,21 @@ Questo è il terzo evento del gruppo dei programmatori Haskell Italiani. A diffe
 
 #### Talk
 
-TODO inserire dettagli talk di Luca. Ci saranno esercizi o talk puro con domande?
+TODO inserire dettagli 
 
 #### Coding with Mentor 
 
-Invece di avere un esercizio/progetto comune, si è pensato di fare gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida.
+Invece di avere un esercizio/progetto comune, si è pensato di fare gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida. 
 
 Portate quindi il portatile, con un ambiente Haskell. Il fine è puramente didattico, quindi nessuna ansia da prestazione legata al codice finale prodotto.:-)
 
-##### Proposta Luca 
+Di seguito ci sono le proposte, ma se ne possono avanzare altre il giorno stesso. Il giorno del meetup sceglieremo quali progetti fare (non e\` detto si facciano tutti), e i relativi gruppi di lavoro.
+
+##### Capire il codice di Stack e provare a risolvere un issue su GitHub 
+
+Mentor: Luca Molteni 
+
+riporto il messaggio di Luca in mailing-list:
 
 Penso che durante il prossimo incontro oltre a qualche talk potremmo organizzare un gruppo per contribuire a un progetto open source scritto in Haskell, in modo da dare effettivamente qualcosa indietro alla comunità e programmare su una code base matura.
 
@@ -27,13 +33,16 @@ Personalmente mi propongo per fare mentoring e seguire un gruppo che si occuper�
 https://github.com/commercialhaskell/stack/issues?q=is%3Aopen+is%3Aissue+label%3Anewcomer
 
 Obiettivo: una pull request. Ce la faremo? Chissà.
-Non siate timidi orsù e fatemi sapere che ci organizziamo.
 
-##### Proposta Massimo
+##### Functional Reactive Programming applicato ad una arena di Robot
 
-Guardare insieme Functional Reactive Programming, in particolare NetWire https://wiki.haskell.org/Netwire, che è una FRP arrow-based, e completare degli esempi di Robot specificati usando https://github.com/massimo-zaniboni/hrobots
+Mentor: Massimo Zaniboni
 
-##### Proposta Titto
+La proposta e` guardare insieme Functional Reactive Programming, in particolare NetWire https://wiki.haskell.org/Netwire, che è una FRP arrow-based, e completare degli esempi di Robot specificati usando https://github.com/massimo-zaniboni/hrobots
+
+##### Libreria Haskell per la scambio di messaggi
+
+Mentor: Titto
 
 Sto lavorando ad un semplice sistema di scambio dati. E' una sorta di twitter ma in cui i messaggi sono valori di tipi ben definiti.
 
@@ -74,10 +83,22 @@ L'esercizio consiste nel:
 Credo che un esercizio cosi' dovrebbe fornire materiale sufficiente tanto per utenti nuovi che per quelli più smaliziati.
 
 Dopo aver creato il modello tutti insieme, dato che le varie funzionalita' di input/output ed elaborazione sono indipendenti una dall'altra, ognuno può scegliere il pezzo che preferisce, più o meno difficile, e lavorare in parallelo.
+.
+
+##### Opalaye - Libreria per l'accesso ai database relazionali
+
+Mentor: Ruggero D'Alo\`
+
+Opalaye e\` una libreria Haskell per l'accesso ai database relazionali. Quello che lo rende interessante e\` che:
+
+* obbliga il programmatore a scrivere query SQL corrette, tenendo conto anche dello schema del database, e non solo della sintassi
+* utilizza numerose estensioni di Haskell, motivandone l'utilita`
+
+L'esercizio consiste nello studio della libreria e delle estensioni Haskel, seguendo http://ren.zone/articles/opaleye-sot e e nella scrittura di alcuni programmi di DEMO.
 
 ##### Esercizi semplici per chi è all'inizio
 
-Problema: ci saranno al meetup anche alcune persone che non conoscono Haskell o sono ai primissimi passi. In questo caso partire da progetti più o meno reali, rischia di essere troppo difficile. Ci vorrebbe qualcuno disposto a seguire chi è all'inizio e fare magari qualche esercizio canonico che si trova nel WEB.
+Problema: ci saranno al meetup anche alcune persone che non conoscono Haskell o sono ai primissimi passi. In questo caso partire da progetti più o meno reali, rischia di essere troppo difficile. Ci vorrebbe qualcuno disposto a seguire chi è all'inizio e fare magari qualche esercizio canonico che si trova nel WEB
 
 ##### Proposte varie in cerca di un Mentor
 
@@ -85,9 +106,6 @@ Problema: ci saranno al meetup anche alcune persone che non conoscono Haskell o 
 
 Studiare una libreria gia' esistente, magari una libreria di uso generale teoricamente ricca ma un po' ostica come "lens", sarebbe un ottimo esercizio.
 
-###### Haskell Extensions
-
-Sulla base di un vecchio post di Luca, mi piacerebbe studiare (anche senza mentor iniziale, quindi anche semplicemente "insieme") e applicare questo articolo su Haskell avanzato, e il suo uso nel scrivere query SQL corrette. http://ren.zone/articles/opaleye-sot Parla di come usare il type system di Haskell (in una sua variante avanzata, con GADT etc...) per scrivere delle query SQL "corrette", cercando di dare una definizione anche di cosa vuol dire scrivere una query corretta.
 
 ##### Altre proposte
 
