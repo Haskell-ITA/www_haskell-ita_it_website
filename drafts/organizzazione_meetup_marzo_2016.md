@@ -87,14 +87,14 @@ Dopo aver creato il modello tutti insieme, dato che le varie funzionalita' di in
 
 ##### Opalaye - Libreria per l'accesso ai database relazionali
 
-Mentor: Ruggero D'Alo\`
+Mentor: Ruggero D'Alò (Arguggi)
 
-Opalaye e\` una libreria Haskell per l'accesso ai database relazionali. Quello che lo rende interessante e\` che:
+Opalaye è una libreria Haskell per l'accesso ai database relazionali. Quello che lo rende interessante è che:
 
 * obbliga il programmatore a scrivere query SQL corrette, tenendo conto anche dello schema del database, e non solo della sintassi
-* utilizza numerose estensioni di Haskell, motivandone l'utilita`
+* utilizza numerose estensioni di Haskell, motivandone l'utilità
 
-L'esercizio consiste nello studio della libreria e delle estensioni Haskel, seguendo http://ren.zone/articles/opaleye-sot e e nella scrittura di alcuni programmi di DEMO.
+L'esercizio consiste nello studio della libreria e delle estensioni Haskell, seguendo http://ren.zone/articles/opaleye-sot e nella scrittura di alcuni programmi di DEMO.
 
 ##### Esercizi semplici per chi è all'inizio
 
