@@ -8,15 +8,15 @@ Questo è il terzo evento del gruppo dei programmatori Haskell Italiani. A diffe
 
 È importante avere già l'ambiente preparato seguendo questa guida [http://haskell-ita.it/2015/01/Installare_Haskell/](http://haskell-ita.it/2015/01/Installare_Haskell/).
 
-#### Talk
-
-TODO inserire dettagli 
-
 #### Coding with Mentor 
 
-Invece di avere un esercizio/progetto comune, si è pensato di fare gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida. 
+Invece di avere un esercizio/progetto comune, si è pensato di creare gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida, pur rimanendo un componente del gruppo e non un "maestro". Il fine è puramente didattico, quindi nessuna ansia legata al codice finale prodotto. Venite possibilmente con il portatile, e con un ambiente Haskell. 
 
-Portate quindi il portatile, con un ambiente Haskell. Il fine è puramente didattico, quindi nessuna ansia da prestazione legata al codice finale prodotto.:-)
+L'idea è questa:
+
+* il lavoro a gruppi permette sia di divertirsi e conoscersi, rompendo il ghiaccio rispetto ad un talk tradizionale, che di scoprire come lavorano altre persone e quindi confrontarsi
+* le frequenti pause (si pensa a delle pomodoro-session con pause comuni e obbligate) permettono a tutti di conoscere persone di altri gruppi e confrontare il lavoro fatto
+* è possibile cambiare gruppo durante il corso della giornata, o dare "consulenze" nel caso ci siano problemi di cui si sa la soluzione
 
 Di seguito ci sono le proposte, ma se ne possono avanzare altre il giorno stesso. Il giorno del meetup sceglieremo quali progetti fare (non e\` detto si facciano tutti), e i relativi gruppi di lavoro.
 
@@ -111,6 +111,9 @@ Studiare una libreria gia' esistente, magari una libreria di uso generale teoric
 
 TODO Sentitevi liberi di proporre quello che preferite, qua o in Mailing-List
 
-## TODO Vari
+#### Talk
 
-TODO preparare locandina evento, da dare Pasqualino Assini da distribuire nelle bacheche delle università e simili
+Per il momento non sono previsti talk classici, dato che per questo meetup si vuole puntare di più sul programmare insieme. La parte di "talk" è in teoria sostituita dalle frequenti pause in cui le varie persone possono commentare il loro lavoro e vedere il lavoro degli altri, scambiandosi informazioni più in stile "fiera", che talk con palco. 
+
+Se però qualcuno vuole preparare ugualmente un talk su un argomento di cui ha esperienza e che vuole condividere con altri, può tranquillamente proporlo. Di fatto l'organizzazione è libera e se un'idea piace e viene votata da un pó di persone, non c'è problema.
+
