@@ -10,7 +10,9 @@ Questo è il terzo evento del gruppo dei programmatori Haskell Italiani. A diffe
 
 #### Coding with Mentor 
 
-Invece di avere un esercizio/progetto comune, si è pensato di creare gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida, pur rimanendo un componente del gruppo e non un "maestro". Il fine è puramente didattico, quindi nessuna ansia legata al codice finale prodotto. Venite possibilmente con il portatile, e con un ambiente Haskell. 
+Si formano gruppi con progetti differenti e un mentor che propone lui il tema e fa un pó da guida, pur rimanendo un componente del gruppo e non un "maestro". 
+
+Il fine è puramente didattico, quindi nessuna ansia legata al codice finale prodotto. Venite possibilmente con il portatile, e con un ambiente Haskell installato. 
 
 L'idea è questa:
 
