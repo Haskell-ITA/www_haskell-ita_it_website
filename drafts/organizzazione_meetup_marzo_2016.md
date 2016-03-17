@@ -17,7 +17,7 @@ Il fine è puramente didattico, quindi nessuna ansia legata al codice finale pro
 L'idea è questa:
 
 * il lavoro a gruppi permette sia di divertirsi e conoscersi, rompendo il ghiaccio rispetto ad un talk tradizionale, che di scoprire come lavorano altre persone e quindi confrontarsi
-* le frequenti pause (si pensa a delle pomodoro-session con pause comuni e obbligate) permettono a tutti di conoscere persone di altri gruppi e confrontare il lavoro fatto
+* le frequenti pause permettono a tutti di conoscere persone di altri gruppi e confrontare il lavoro fatto
 * è possibile cambiare gruppo durante il corso della giornata, o dare "consulenze" nel caso ci siano problemi di cui si sa la soluzione
 
 Di seguito ci sono le proposte, ma se ne possono avanzare altre il giorno stesso. Il giorno del meetup sceglieremo quali progetti fare (non e\` detto si facciano tutti), e i relativi gruppi di lavoro.
