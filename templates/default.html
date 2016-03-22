@@ -31,12 +31,12 @@
       <button class="btn btn-primary" onclick="hideCookieAlert();">Ok, nascondi questo messaggio</button>
     </div>
     <script type="text/javascript">
-      if(!window.localStorage.getItem("cookie-alert-hidden")){
+      if(!window.localStorage.getItem("cookies-accepted")){
         document.getElementById("cookie-alert").style.display = "block";
       }
       function hideCookieAlert(){
         document.getElementById("cookie-alert").style.display = "none";
-        window.localStorage.setItem("cookie-alert-hidden", true);
+        window.localStorage.setItem("cookies-accepted", true);
       }
     </script>
 
