@@ -173,3 +173,18 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/*
+ * Cookie alert
+ */
+
+#cookie-alert {
+  bottom: 0px;
+  position: fixed;
+  display: none;
+  width: 100%;
+  color: white;
+  background-color: black;
+  z-index: 666666;
+  padding: 4px 20px 4px 20px;
+}

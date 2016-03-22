@@ -20,9 +20,25 @@
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<link href="/css/blog.css" rel="stylesheet">
+		<script src="/js/cookie-alert.js"></script>
  
   </head>
   <body>
+
+    <div id="cookie-alert">
+      Questo sito usa cookie per i commenti e altre funzioni. Utilizzandolo, ne accetti l'impiego.
+      <a href="//nibirumail.com/cookies/policy/?url=haskell-ita.it">Ulteriori informazioni</a>
+      <button class="btn btn-primary" onclick="hideCookieAlert();">Ok, nascondi questo messaggio</button>
+    </div>
+    <script type="text/javascript">
+      if(!window.localStorage.getItem("cookie-alert-hidden")){
+        document.getElementById("cookie-alert").style.display = "block";
+      }
+      function hideCookieAlert(){
+        document.getElementById("cookie-alert").style.display = "none";
+        window.localStorage.setItem("cookie-alert-hidden", true);
+      }
+    </script>
 
     <div class="blog-masthead navbar-fixed-top">
       <div class="container">
