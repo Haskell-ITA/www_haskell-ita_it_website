@@ -42,50 +42,25 @@ Mentor: Massimo Zaniboni
 
 La proposta e` guardare insieme Functional Reactive Programming, in particolare NetWire https://wiki.haskell.org/Netwire, che è una FRP arrow-based, e completare degli esempi di Robot specificati usando https://github.com/massimo-zaniboni/hrobots
 
-##### Libreria Haskell per la scambio di messaggi
+##### Semplici Sistemi distribuiti in Haskell.
 
-Mentor: Titto
+Mentor: Pasqualino "Titto" Assini
 
-Sto lavorando ad un semplice sistema di scambio dati. E' una sorta di twitter ma in cui i messaggi sono valori di tipi ben definiti.
+Descrizione: Introduzione alla programmazione distribuita.
 
-Molto brevemente, il sistema consente a qualsiasi utente di:
+Livello richiesto: Da principiante ad esperto.
 
-* definire uno o piu' tipi dati e registrarli presso il sistema.
-* inviare valori di uno qualunque dei tipi registrati.
-* ricevere tutti i valori di un certo tipo (opzionalmente anche filtrandoli sulla base del valore di alcuni campi)
+Il sistema che useremo è un sistema di messaggeria, in cui i messaggi sono valori di tipi definiti in Haskell.
 
-E' una struttura semplice ma molto flessibile.
+Molto brevemente, il sistema consente di:
 
-Supponiamo ad esempio che uno voglia implementare una chat intelligente, tipo Haskel lRC, da usare magari proprio durante il nostro incontro.
+* definire uno o piu' tipi dati in Haskell
+* inviare valori di uno qualunque dei tipi definiti
+* ricevere tutti i valori di un certo tipo
 
-Un semplice modello dati potrebbe essere qualcosa cosa come:
+E' una struttura minimalista ma molto flessibile, una sorta di grado zero dei sistemi distribuiti.
 
-    -- Protocol for a simple chat system
-    data Chat = ChatEntry {
-                       fromUser::String
-                      ,subject::Subject
-                      ,message::Message}
-
-    -- Hierarchical subject
-    -- Example: Subject ["Haskell","Meeting","Firenze","Marzo 2016","Stack Development"]
-    data Subject = Subject [String] 
-
-    -- Different kind of messages
-    data Message = TextMessage String
-                 | HaskellSearch String
-                 | HaskellExpression String
-
-
-L'esercizio consiste nel:
-
-* creare un modello e registrarlo 
-* creare una semplice interfaccia utente per creare messaggi e per visualizzarli
-* creare qualche (ro)bot che quando vede un valore di un tipo particolare reagisce in maniera intelligente. Ad esempio se si tratta di una  HaskellExpression, la valuta e ritorna il risultato o quando vede una HaskellSearch fa la ricerca su Hoogle e ritorna il risultato.
-
-Credo che un esercizio cosi' dovrebbe fornire materiale sufficiente tanto per utenti nuovi che per quelli più smaliziati.
-
-Dopo aver creato il modello tutti insieme, dato che le varie funzionalita' di input/output ed elaborazione sono indipendenti una dall'altra, ognuno può scegliere il pezzo che preferisce, più o meno difficile, e lavorare in parallelo.
-.
+Ulteriori informazioni e le istruzioni di installazione del codice (da installare **prima** di arrivare al meeting) sono disponibili su [github](https://github.com/tittoassini/HaskellMeetingFirenze2016).
 
 ##### Opalaye - Libreria per l'accesso ai database relazionali
 
