@@ -1,4 +1,4 @@
-# Meetup Organizations
+# Meetups Organization
 
 ## Shared Projects
 
@@ -58,4 +58,3 @@ Alcuni TAG che si possono usare nei commenti, per renderne esplicito il senso:
 * FACT (observation) 
 * PROBLEM (problem discovered in the code / design) 
 * POSSIBLE-SOLUTION (possible solution for the problem) 
-
