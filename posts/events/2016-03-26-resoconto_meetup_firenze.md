@@ -8,17 +8,12 @@ tags: meetups
 Ci siamo trovati Sabato 26 Marzo, a Calenzano, in provincia di Firenze, ospitati da [Develer](https://www.develer.com/). 
 
 <img src="/images/photos/meetup_2016-03-26.jpg" alt="photo" class="img-thumbnail">
-Partecipanti, fila in piedi (a partire da sinistra): Luca Benci, ?B, ?C, Carlo Nucera, Nicola Bonelli, Francesco Ariis, ?D, ?E, Marco Santamaria, ?F. In ginocchio: Pasqualino Assini (Titto), Massimo Zaniboni, Ruggero D’Alò, Vitalij Zadneprovskij, ?G, Aurelien Rainone, Francesco Gazzetta. Non inquadrato, a fare la foto: Luca Molteni :-)
 
-TODO: nomi da assegnare
+Partecipanti, fila in piedi (a partire da sinistra): Luca Benci, Alberto, Daniele D'Orazio, Carlo Nucera, Nicola Bonelli, Francesco Ariis, Matteo Baglini, Salvatore Veneziano, Marco Santamaria, Emanuele.
 
-* Alberto
-* Emanuele
-* Matteo Baglini
-* Nicola Bonelli
-* Daniele D'Orazio
-* Nadir Sampaoli
-* Salvatore Veneziano
+In ginocchio: Pasqualino Assini (Titto), Massimo Zaniboni, Ruggero D’Alò, Vitalij Zadneprovskij, Nadir Sampaoli, Aurelien Rainone, Francesco Gazzetta. 
+
+Dietro, a fare la foto: Luca Molteni :-)
 
 Ritrovo alle 10:00, con la sede di Develer pronta a ospitare, nonostante sia il Sabato prima di Pasqua, il nostro terzo meetup: diciotto programmatori appassionati di Haskell, provenienti da tutta Italia, e pronti a condividere una giornata di programmazione funzionale e divertimento.
 
