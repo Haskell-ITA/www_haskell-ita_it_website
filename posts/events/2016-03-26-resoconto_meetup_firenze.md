@@ -8,8 +8,19 @@ tags: meetups
 Ci siamo trovati Sabato 26 Marzo, a Calenzano, in provincia di Firenze, ospitati da [Develer](https://www.develer.com/). 
 
 <img src="/images/photos/meetup_2016-03-26.jpg" alt="photo" class="img-thumbnail">
+Partecipanti, fila in piedi (a partire da sinistra): Luca Benci, ?B, ?C, Carlo Nucera, Nicola Bonelli, Francesco Ariis, ?D, ?E, Marco Santamaria, ?F. In ginocchio: Pasqualino Assini (Titto), Massimo Zaniboni, Ruggero D’Alò, Vitalij Zadneprovskij, ?G, Aurelien Rainone, Francesco Gazzetta. Non inquadrato, a fare la foto: Luca Molteni :-)
 
-Ritrovo alle 10:00, e la sede di Develer nonostante sia il Sabato prima di Pasqua, è pronta a ospitare il nostro terzo meetup: diciotto programmatori appassionati di Haskell, provenienti da tutta Italia, e pronti a condividere un pomeriggio di programmazione funzionale e (conseguente) divertimento.
+TODO: nomi da assegnare
+
+* Alberto
+* Emanuele
+* Matteo Baglini
+* Nicola Bonelli
+* Daniele D'Orazio
+* Nadir Sampaoli
+* Salvatore Veneziano
+
+Ritrovo alle 10:00, con la sede di Develer pronta a ospitare, nonostante sia il Sabato prima di Pasqua, il nostro terzo meetup: diciotto programmatori appassionati di Haskell, provenienti da tutta Italia, e pronti a condividere una giornata di programmazione funzionale e divertimento.
 
 Dopo un breve sondaggio sulla preparazione tecnica dei presenti, sono stati proposti i seguenti progetti, su cui lavorare a gruppi:
 
@@ -54,30 +65,7 @@ Carlo ha mostrato e spiegato un'anteprima dei suoi articoli sulle Lens che saran
 
 Intanto un doveroso plauso ai programmatori di Develer che oltre a fare gli onori di casa, si sono cimentati con il linguaggio Haskell, mostrando una curiosità e una passione veramente a tutto campo per quel che riguarda il loro lavoro.
 
-In questo terzo meetup abbiamo deciso di privilegiare il lavoro in gruppo e la programmazione, rispetto ai più "freddi" talk. L'impressione è che ci sia divertiti e non poco, e che si sia creato un buon spirito di gruppo/community, complice anche l'accogliente sala con ampie vetrate e vista sulle montagne. 
+In questo terzo meetup abbiamo deciso di privilegiare il lavoro in gruppo e la programmazione, rispetto ai talk. La maggior parte delle persone è riuscita a partecipare al lavoro di due gruppi durante il corso della giornata: uno principale e poi nella parte finale del pomeriggio un progetto minore come un corso sulle Lens, o degli esercizi Kata. Nelle pause fra una sessione di lavoro e un'altra c'è stato modo di chiaccherare e confrontarsi anche fra persone di gruppi differenti.
 
-La maggior parte delle persone è riuscita a partecipare al lavoro di due gruppi durante il corso della giornata: uno principale e poi nella parte finale del pomeriggio o un corso sulle Lens, o dei Kata o altri progetti minori. Inoltre nelle pause fra una sessione di lavoro e un'altra e durante il pranzo insieme, c'è stato modo di chiaccherare e confrontarsi anche fra persone di gruppi differenti. Insomma una gran bella giornata. 
-
-## Partecipanti
-
-18 persone:
-
-* Alberto
-* Emanuele
-* Ruggero
-* Titto
-* Francesco Aaris
-* Matteo Baglini
-* Luca Benci
-* Nicola Bonelli
-* Daniele D'Orazio
-* Francesco Gazzetta
-* Luca Molteni
-* Carlo Nucera
-* Aurelièn Rainnone
-* Nadir Sampaoli
-* Marco Santamaria
-* Salvatore Veneziano
-* Vitallij Z.
-* Massimo Zaniboni
+L'impressione è che ci sia divertiti e non poco, e che si sia creato un buon spirito di gruppo/community, complice anche l'accogliente sala con ampie vetrate e vista sulle montagne. 
 
