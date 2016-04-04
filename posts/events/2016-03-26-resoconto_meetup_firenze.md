@@ -9,7 +9,7 @@ Ci siamo trovati Sabato 26 Marzo, a Calenzano, in provincia di Firenze, ospitati
 
 <img src="/images/photos/meetup_2016-03-26.jpg" alt="photo" class="img-thumbnail">
 
-Partecipanti, fila in piedi (a partire da sinistra): Luca Benci, Alberto, Daniele D'Orazio, Carlo Nucera, Nicola Bonelli, Francesco Ariis, Matteo Baglini, Salvatore Veneziano, Marco Santamaria, Emanuele.
+Partecipanti, fila in piedi (a partire da sinistra): Luca Benci, Alberto, Daniele D'Orazio, Carlo Nucera, Nicola Bonelli, Francesco Ariis, Matteo Baglini, Salvatore Veneziano, Marco Santamaria, Emiliano Anichini.
 
 In ginocchio: Pasqualino Assini (Titto), Massimo Zaniboni, Ruggero D’Alò, Vitalij Zadneprovskij, Nadir Sampaoli, Aurelien Rainone, Francesco Gazzetta. 
 

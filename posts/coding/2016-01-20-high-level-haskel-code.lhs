@@ -1,7 +1,7 @@
 ---
 title: Studio di codice Haskell high-level 
 author: Massimo Zaniboni <massimo.zaniboni@gmail.com>
-date: 2015-01-20
+date: 2016-01-20
 tags: coding
 ---
 
