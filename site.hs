@@ -137,8 +137,6 @@ indexCtx activeSection categories tags =
 --   DEV-NOTE: I generated directly the "categoriesEntries" in the HTML format requested from the template. This is not elegant, but I was not able to generate a list of distinct high-level attributes to use in the template for formatting the produced HTML page. 
 defaultCtx :: Maybe String -> Tags -> Tags -> Context String
 defaultCtx activeSection categories tags = 
-      field "categoriesEntries" (const (renderTagListForTopMenu activeSection categories))  <>
-      field "tagsEntries" (const (renderTagListForTopMenu Nothing tags)) <>
       defaultContext
 
 pageCtx :: Maybe String -> PageNumber -> Paginate -> Tags -> Tags -> Context String
@@ -248,26 +246,6 @@ renderTagList' = renderTags makeLink (intercalate " ")
    where
       makeLink tag url count _ _ = renderHtml $
          H.a ! A.href (toValue . dropFileName $ url) $ toHtml (tag ++ " (" ++ show count ++ ")")
-
--- | Create an HTML list in the format specifically requested from the template.
---   This function contains also all the definitions for the Top menu of the BLOG
-renderTagListForTopMenu :: Maybe String -> Tags -> Compiler String
-renderTagListForTopMenu activeSection tags = do
-     let s1 = makeLi "home" "/"
-     let s2 = makeLi "about" "/about/index.html"
-     s3 <- renderTags makeLink (intercalate " ") tags
-     return $ s1 ++ " " ++ s2 ++ " " ++ s3
-
-   where
-
-      makeLi :: String -> String -> String
-      makeLi tag url = 
-        let classStr = if Just tag == activeSection
-                       then "blog-nav-item active"
-                       else "blog-nav-item"
-        in renderHtml $ H.a ! A.href (toValue url) ! A.class_ classStr $ toHtml tag
-
-      makeLink tag url _ _ _ = makeLi tag (dropFileName url)
 
 renderBlogAtom :: [Item String] -> Compiler (Item String)
 renderBlogAtom = renderAtom myFeedConfiguration feedsCtx
