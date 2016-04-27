@@ -22,6 +22,7 @@ Execute
 
 Execute
 
+    stack clean
     stack build
     stack exec site clean
     stack exec site build
@@ -131,4 +132,3 @@ TODO create a web-hook on GitHub
 TODO the web server receive the hook, make git pull of the repo, and then make a site build
 
 TODO daily the web server execute also a site clean and regeneration, in order to manage the big changes in the structure of the code of the site
-
