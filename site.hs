@@ -9,7 +9,7 @@ import            Data.Binary                      (Binary)
 import            Data.Maybe                       (fromMaybe, listToMaybe)
 import            Data.Monoid                      ((<>), mconcat)
 import            Data.Functor                     ((<$>))
-import            Data.List                        (intercalate, intersperse, unfoldr, sortBy, isSuffixOf)
+import            Data.List                        (intercalate, intersperse, unfoldr, sortBy, isSuffixOf, elemIndex, reverse)
 import            Data.Char                        (toLower, toUpper)
 import            Data.Time.Clock                  (UTCTime (..))
 import            Control.Monad                    (msum, filterM, (<=<), liftM, forM, filterM)
@@ -137,6 +137,8 @@ indexCtx activeSection categories tags =
 --   DEV-NOTE: I generated directly the "categoriesEntries" in the HTML format requested from the template. This is not elegant, but I was not able to generate a list of distinct high-level attributes to use in the template for formatting the produced HTML page. 
 defaultCtx :: Maybe String -> Tags -> Tags -> Context String
 defaultCtx activeSection categories tags = 
+      field "categoriesEntries" (const (renderTagListForTopMenu activeSection categories))  <>
+      field "tagsEntries" (const (renderTagListForTopMenu Nothing tags)) <>
       defaultContext
 
 pageCtx :: Maybe String -> PageNumber -> Paginate -> Tags -> Tags -> Context String
@@ -246,6 +248,48 @@ renderTagList' = renderTags makeLink (intercalate " ")
    where
       makeLink tag url count _ _ = renderHtml $
          H.a ! A.href (toValue . dropFileName $ url) $ toHtml (tag ++ " (" ++ show count ++ ")")
+
+-- | Create an HTML list in the format specifically requested from the template.
+--   This function contains also all the definitions for the Top menu of the BLOG
+renderTagListForTopMenu :: Maybe String -> Tags -> Compiler String
+renderTagListForTopMenu activeSection tags = do
+     let s1 = makeLi "home" "Home" "/"
+     let s2 = makeLi "about" "Chi Siamo" "/about/index.html"
+     s3 <- renderTags makeLink (intercalate " ") orderedTags
+     return $ s1 ++ " " ++ s2 ++ " " ++ s3
+
+   where
+
+      makeLi :: String -> String -> String -> String
+      makeLi tag nameOnMenu url = 
+        let classStr = if Just tag == activeSection
+                       then "blog-nav-item active"
+                       else "blog-nav-item"
+        in renderHtml $ H.a ! A.href (toValue url) ! A.class_ classStr $ toHtml nameOnMenu
+
+      -- | Convert names from English to Italian
+      fromTagToMenuName :: String -> String
+      fromTagToMenuName "coding" = "Codice Haskel"
+      fromTagToMenuName "events" = "Eventi"
+      fromTagToMenuName "tools" = "Come Iniziare"
+      fromTagToMenuName n = n
+
+      -- | Order entries on the top down menu
+      menuOrder :: [String]
+      menuOrder = ["events", "tools", "coding"]
+
+      tagOrder :: String -> String -> Ordering
+      tagOrder x y 
+        = case elemIndex x menuOrder of
+            Nothing -> GT
+            Just xx 
+              -> case elemIndex y menuOrder of
+                   Nothing -> LT
+                   Just yy -> compare xx yy       
+
+      orderedTags = sortTagsBy (\x y -> tagOrder (fst x) (fst y)) tags
+
+      makeLink tag url _ _ _ = makeLi tag (fromTagToMenuName tag) (dropFileName url)
 
 renderBlogAtom :: [Item String] -> Compiler (Item String)
 renderBlogAtom = renderAtom myFeedConfiguration feedsCtx
