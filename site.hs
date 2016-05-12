@@ -269,7 +269,7 @@ renderTagListForTopMenu activeSection tags = do
 
       -- | Convert names from English to Italian
       fromTagToMenuName :: String -> String
-      fromTagToMenuName "coding" = "Codice Haskel"
+      fromTagToMenuName "coding" = "Codice Haskell"
       fromTagToMenuName "events" = "Eventi"
       fromTagToMenuName "tools" = "Come Iniziare"
       fromTagToMenuName n = n
