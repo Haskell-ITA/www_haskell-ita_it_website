@@ -1,0 +1,32 @@
+before_script:
+  - apt-get update -qq
+
+stages:
+  - deploy
+
+cache:
+  paths:
+    - .cabal-sandbox
+    - cabal.sandbox.config
+    - ~/.cabal
+    - ~/.ghc
+    - /root/.cabal
+    - /root/.ghc
+    - dist
+
+pages:
+  stage: deploy
+  image: debian:testing # we need a recent ghc
+  script:
+    - apt-get install -y -qq ghc cabal-install zlib1g-dev curl locales
+    - cabal update
+    - curl https://www.stackage.org/lts-5.14/cabal.config > cabal.config
+    - echo "en_US UTF-8" > /etc/locale.gen
+    - locale-gen en_US.UTF-8
+    - export LC_ALL=en_US.UTF-8
+    - cabal install
+    - ~/.cabal/bin/site build
+    - mv _site public
+  artifacts:
+    paths:
+    - public
