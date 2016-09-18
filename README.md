@@ -129,8 +129,4 @@ TODO chiedere se puo` diventare la pagina standard di Haskell invece che il blog
 
 ### Automatic Update of the WebSite
 
-TODO create a web-hook on GitHub
-
-TODO the web server receive the hook, make git pull of the repo, and then make a site build
-
-TODO daily the web server execute also a site clean and regeneration, in order to manage the big changes in the structure of the code of the site
+The repo is automatically synced once an hour on gitlab.com, where a build is triggered if there are new commits.
