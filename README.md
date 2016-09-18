@@ -1,5 +1,7 @@
 # blog.haskell-ita.it
 
+[![build status](https://gitlab.com/haskell-ita/www_haskell-ita_it_website/badges/master/build.svg)](https://gitlab.com/haskell-ita/www_haskell-ita_it_website/commits/master)
+
 ## How to Update the Website
 
 ### Initial Setup
