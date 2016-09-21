@@ -8,7 +8,7 @@ Ci siamo trovati a Milano, Sabato 4 Luglio, ospitati da [Mikamai](https://www.mi
 
 ## Partecipanti:
 
-<img src="/images/photos/meetup_2015_estate.jpg" alt="photo" class="img-thumbnail">
+<a href="/images/photos/meetup_2015_estate_full.jpg"><img src="/images/photos/meetup_2015_estate.jpg" alt="photo" class="img-thumbnail"></a>
 
 Da sinistra verso destra: Matteo Acerbi, Ruggero D'Alò, Luca Molteni, Francesco Ariis, Carlo Nucera, Massimo Zaniboni, Stefano Baghino, Vitalij Zadneprovskij.
 

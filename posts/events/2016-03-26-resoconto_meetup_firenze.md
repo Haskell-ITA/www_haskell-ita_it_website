@@ -7,7 +7,7 @@ tags: meetups
 
 Ci siamo trovati Sabato 26 Marzo, a Calenzano, in provincia di Firenze, ospitati da [Develer](https://www.develer.com/). 
 
-<img src="/images/photos/meetup_2016-03-26.jpg" alt="photo" class="img-thumbnail">
+<a href="/images/photos/meetup_2016-03-26_full.jpg"><img src="/images/photos/meetup_2016-03-26.jpg" alt="photo" class="img-thumbnail"></a>
 
 Partecipanti, fila in piedi (a partire da sinistra): Luca Benci, Alberto, Daniele D'Orazio, Carlo Nucera, Nicola Bonelli, Francesco Ariis, Matteo Baglini, Salvatore Veneziano, Marco Santamaria, Emiliano Anichini.
 
