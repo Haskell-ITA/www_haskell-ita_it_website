@@ -105,7 +105,9 @@ Then make a Git commit, and push to the remote repo.
     git commit -a -m "<some-message>"
     git push
 
-The hosting server will make a pull, and publish the content of `_site/` directory. All other content will be not be published.
+The hosting server will make a pull, and publish the content of `_site/` directory, without the generated HTML pages.
+
+The repo is automatically synced once an hour on gitlab.com, where a build is triggered if there are new commits, the HTML pages are generated, and the public website http://www.haskell-ita.it is updated within 1-2 hours.
 
 ### Known Problems
 
@@ -115,18 +117,3 @@ If you miss the tag `date`, and `author` Hakyll generates a not clear error mess
 
 In case of community pages uses `community` as author.
 
-## Project Roadmap (TODO)
-
-### Initial Release
-
-TODO provare a fare subscribe ai FEEDS quando ho installato
-
-TODO chiedere se puo` diventare la pagina standard di Haskell invece che il blog:
-* cancello la knowldge-base su GitHub
-* metto su un branch a parte il sito vecchio
-* faccio puntare blog.haskell-ita.it a www.haskell-ita.it
-* sostituisco il sito attuale www.haskell-ita.it con questo
-
-### Automatic Update of the WebSite
-
-The repo is automatically synced once an hour on gitlab.com, where a build is triggered if there are new commits.
