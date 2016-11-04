@@ -14,5 +14,5 @@
 
 **Grazie a chi:** all'associazione [Kilowatt](http://kilowatt.bo.it/about) che ha messo a disposizione gratuitamente la sala.
 
-{{link a metooo? Chi ha le credenziali di accesso?}}
+**Per iscriversi:** https://www.metooo.io/e/haskell-day-bologna
 
