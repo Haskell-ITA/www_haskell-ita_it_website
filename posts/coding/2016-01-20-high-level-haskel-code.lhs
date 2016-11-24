@@ -5,7 +5,7 @@ date: 2016-01-20
 tags: coding
 ---
 
-La libreria [Haskell-MVC](http://hackage.haskell.org/package/mvc) scritta da Gabriel Gonzaleg, è un ottimo esempio di codice Haskell d'alto livello, scritto da una persona sicuramente intelligente e che padroneggia il linguaggio. La libreria è usata in questo post solo come punto di partenza e pretesto per capire quanto sia facile o difficile studiare il codice Haskell scritto da altri, e non verrà trattata nella sua interezza, anzi quasi per niente.
+La libreria [Haskell-MVC](http://hackage.haskell.org/package/mvc) scritta da Gabriel Gonzalez, è un ottimo esempio di codice Haskell d'alto livello, scritto da una persona sicuramente intelligente e che padroneggia il linguaggio. La libreria è usata in questo post solo come punto di partenza e pretesto per capire quanto sia facile o difficile studiare il codice Haskell scritto da altri, e non verrà trattata nella sua interezza, anzi quasi per niente.
 
 La libreria definisce una View come 
 
@@ -185,7 +185,7 @@ Un `Monoid` è una struttura definita come:
       mempty  :: a
       mappend, (<>) :: a -> a -> a
 
-e per cui valgono la propietà associativa e esiste un elemento neutro. I numeri Interi sono Monoid, e lo sono rispetto la somma o la moltiplicazione, tra le altre cose. Le liste sono Monoid e lo sono rispetto alla concatenazione.
+e per la quale valgono la propietà associativa ed esiste un elemento neutro. I numeri Interi sono Monoid, e lo sono rispetto la somma o la moltiplicazione, tra le altre cose. Le liste sono Monoid e lo sono rispetto alla concatenazione.
  
 Siccome una View è un Monoid, allora possiamo sempre combinare due View e ottenere una nuova View. Il che rende la View un tipo di dato molto comodo da usare e estremamente componibile. Come tutti i Monoid del resto.
 
