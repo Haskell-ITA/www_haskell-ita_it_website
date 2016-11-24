@@ -9,10 +9,10 @@ maintainer:	    massimo.zaniboni@docmelody.com
 executable site
   main-is:          site.hs
   build-depends:    base == 4.*
-                  , hakyll == 4.7.*
-                  , old-locale ==1.0.*
-                  , binary ==0.7.*
-                  , time ==1.5.*
+                  , hakyll == 4.9.*
+                  , old-locale == 1.0.*
+                  , binary == 0.8.*
+                  , time == 1.6.*
                   , containers ==0.5.*
                   , filepath ==1.4.*
                   , blaze-html ==0.8.*

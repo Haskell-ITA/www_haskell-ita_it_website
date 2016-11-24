@@ -23,7 +23,7 @@ import qualified  Data.Map                         as M
 import qualified  Text.Blaze.Html5                 as H
 import qualified  Text.Blaze.Html5.Attributes      as A
 import            System.FilePath
-import            Hakyll
+import            Hakyll as Hakyll
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -173,7 +173,7 @@ feedsCtx =
 getPeople :: MonadMetadata m => Identifier -> m [String]
 getPeople identifier = do
   metadata <- getMetadata identifier
-  return $ maybe [] (map trim . splitAll ",") $ M.lookup "author" metadata
+  return $ maybe [] (map trim . splitAll ",") $ Hakyll.lookupString "author" metadata
 
 --------------------------------------------------------------------------------
 -- ROUTES
@@ -313,7 +313,7 @@ tryParseDate = tryParseDateWithLocale defaultTimeLocale
 
 tryParseDateWithLocale :: TimeLocale -> Identifier -> Metadata -> Maybe UTCTime
 tryParseDateWithLocale locale id' metadata = do
-   let tryField k fmt = M.lookup k metadata >>= parseTime' fmt
+   let tryField k fmt = Hakyll.lookupString k metadata >>= parseTime' fmt
        fn             = takeFileName $ toFilePath id'
 
    maybe empty' return $ msum $
