@@ -9,10 +9,10 @@ In un’uggiosa giornata autunnale, venti intrepidi Haskellers provenienti da va
 
 <a href="/images/photos/meetup_2016_11_19_gruppo.jpg"><img src="/images/photos/meetup_2016_11_19_gruppo.jpg" alt="photo" class="img-thumbnail"></a>
 
-Seguendo un approccio ormai collaudato, abbiamo formato piccoli gruppi di lavoro, in modo che a ognuno fosse possibile partecipare, in maniera attiva e alla pari, ad uno o più progetti di proprio gradimento - il tutto in maniera estremamente libera e amichevole. 
+Seguendo un approccio ormai collaudato, abbiamo formato piccoli gruppi di lavoro, in modo che a ognuno fosse possibile partecipare, in maniera attiva e alla pari, ad uno o più progetti di proprio gradimento - il tutto in maniera estremamente libera e amichevole.
 
 ### Nuovi Arrivati
-Un gruppo di volenterosi newbie si è cimentato su esercizi, presi dall’ottimo [Haskell Programming from first principles](http://haskellbook.com/). Come spesso accade, gli esercizi si sono rivelati tutt’altro che semplici - e un confronto con persone più esperte è stato decisamente utile. Ecco un [resoconto di quanto imparato](http://another-ticket-in-the-wall.blogspot.it/2016/11/combinatorial-problems-in-haskell.html). 
+Un gruppo di volenterosi newbie si è cimentato su esercizi, presi dall’ottimo [Haskell Programming from first principles](http://haskellbook.com/). Come spesso accade, gli esercizi si sono rivelati tutt’altro che semplici - e un confronto con persone più esperte è stato decisamente utile. Ecco un [resoconto di quanto imparato](http://another-ticket-in-the-wall.blogspot.it/2016/11/combinatorial-problems-in-haskell.html).
 
 <a href="/images/photos/meetup_2016_11_19_newbie.jpg"><img src="/images/photos/meetup_2016_11_19_newbie.jpg" alt="photo" class="img-thumbnail"></a>
 
@@ -27,9 +27,9 @@ Si è organizzato un piccolo simposio per discutere della situazione del web-dev
 
 ### Fuga dagli alieni dallo spazio profondo
 Abbiamo esplorato i problemi di concorrenza che si possono presentare in un’applicazione di rete, prendendo a pretesto un prototipo di gioco multiplayer online che permettesse ai client di accedere ad una scacchiera condivisa applicando una semplice regola: due utenti non possono stare nella stessa cella.
-Per fare ciò, abbiamo introdotto un’architettura client/server mediante [websocket](https://hackage.haskell.org/package/websockets) e uno stato condiviso sul server utilizzando [MVar](https://hackage.haskell.org/package/base-4.9.0.0/docs/Control-Concurrent-MVar.html ). 
+Per fare ciò, abbiamo introdotto un’architettura client/server mediante [websocket](https://hackage.haskell.org/package/websockets) e uno stato condiviso sul server utilizzando [MVar](https://hackage.haskell.org/package/base-4.9.0.0/docs/Control-Concurrent-MVar.html ).
 Dopodiché, abbiamo simulato una race condition - introducendo un tempo di attesa tra il primo controllo di disponibilità della cella e l’effettiva modifica: a questo punto, due client che entravano nella stessa cella contemporaneamente potevano farlo!
-Sostituendo MVar con TVar - tratto da [STM] (https://hackage.haskell.org/package/stm) - abbiamo ottenuto il controllo della transazione e la possibilità di individuare modifiche esterne allo stato - che abbiamo deciso di risolvere mantenendo il secondo client fermo nella posizione precedente.
+Sostituendo MVar con TVar - tratto da [STM](https://hackage.haskell.org/package/stm) - abbiamo ottenuto il controllo della transazione e la possibilità di individuare modifiche esterne allo stato - che abbiamo deciso di risolvere mantenendo il secondo client fermo nella posizione precedente.
 
 ### Programmazione Message-Oriented
 Un gruppo di persone ha svolto esercizi utilizzando la libreria [Quid2](https://github.com/tittoassini/quid2), sotto la guida del suo autore: Titto.
