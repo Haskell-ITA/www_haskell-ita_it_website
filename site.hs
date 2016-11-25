@@ -3,7 +3,6 @@
 -- Initial Author: Massimo Zaniboni <massimo.zaniboni@docmelody.com>
 -- Code partially based on https://github.com/gislik/gisli.hamstur.is
 
-import            Debug.Trace
 import            Data.Typeable                    (Typeable)
 import            Data.Binary                      (Binary)
 import            Data.Maybe                       (fromMaybe, listToMaybe)
