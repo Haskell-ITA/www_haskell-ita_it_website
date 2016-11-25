@@ -233,10 +233,10 @@ loadBlogs :: (Typeable a, Binary a) => Pattern -> Compiler [Item a]
 loadBlogs = blogOrder <=< flip loadAllSnapshots blogSnapshot
 
 buildPages :: (MonadMetadata m, Functor m) => Maybe String -> Pattern -> m Paginate
-buildPages mprefix pattern = 
-   buildPaginateWith 
-      (return . paginateEvery blogPerPage)
-      pattern
+buildPages mprefix patt =
+   buildPaginateWith
+      (fmap (paginateEvery blogPerPage) . sortRecentFirst)
+      patt
       (asIdentifier mprefix . show)
    where
       asIdentifier :: Maybe String -> String -> Identifier
