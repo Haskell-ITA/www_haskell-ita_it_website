@@ -15,4 +15,6 @@ Interazione "community-oriented" (Haddock Overflow :-)
 
 Credo molto nella documentazione che si migliora in modo incrementale dato che i dubbi miei quando leggo una classe oscura sono anche di tanti altri, ma se non e\` facile "fare domande" e migliorare la documentazione, per inerzia nessuno lo fa. Inoltre ho visto che in PHP la sezione di domande e risposte sotto la pagina di documentazione ufficiale e\` spesso molto utile.
 
+Discussione su IRC http://irc.fgaz.me/425
+
 
