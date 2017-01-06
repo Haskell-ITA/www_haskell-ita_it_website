@@ -6,3 +6,4 @@ tmp/
 .stack-work
 .cabal-sandbox/
 cabal.sandbox.config
+dist-newstyle
