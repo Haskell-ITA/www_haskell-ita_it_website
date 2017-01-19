@@ -11,7 +11,7 @@ tags: meetups
 
 **Chi:** chiunque sia interessato alla programmazione funzionale, indipendentemente dal suo livello di esperienza.
 
-**Cosa faremo:** lavoreremo in gruppi (2-6 persone circa) su diversi progetti. Ogni persona può scegliere il progetto che vuole, saranno date delle indicazioni sul livelo di conoscienza richiesto per contribuire. Lo scopo è provare a utilizzare Haskell per un progetto concreto, "toccare con mano" il modo che hanno altri di lavorare e di condividere le esperienze nelle numerose pause di gruppo. Lo scopo è puramente didattico, quindi nessuna ansia.
+**Cosa faremo:** lavoreremo in gruppi (2-6 persone circa) su diversi progetti. Ogni persona può scegliere il progetto che vuole, saranno date delle indicazioni sul livelo di conoscenza richiesto per contribuire. Lo scopo è provare a utilizzare Haskell per un progetto concreto, "toccare con mano" il modo di lavorare altrui e di condividere le esperienze nelle numerose pause di gruppo. Lo scopo è puramente didattico, quindi nessuna ansia.
 
 **Cosa portare:** un computer portatile e un ambiente Haskell configurato.
 
