@@ -15,6 +15,6 @@ tags: meetups
 
 **Cosa portare:** un computer portatile e un ambiente Haskell configurato.
 
-**Grazie a chi:** [MIKAMAI](https://www.mikamai.com/) che ha messo a disposizione gratuitamente la sala.
+**Grazie a chi:** [MIKAMAI](https://www.mikamai.com/) e [LinkMe](http://www.linkme.it/) che hanno messo a disposizione gratuitamente la sala.
 
 **Per iscriversi:** [metooo.io](https://www.metooo.io/e/incontro-haskell-ita-inverno-2017)
