@@ -5,19 +5,15 @@
 
 import            Data.Typeable                    (Typeable)
 import            Data.Binary                      (Binary)
-import            Data.Maybe                       (fromMaybe, listToMaybe)
-import            Data.Monoid                      ((<>), mconcat, mappend)
-import            Data.Functor                     ((<$>))
-import            Data.List                        (intercalate, intersperse, unfoldr, sortBy, isSuffixOf, elemIndex, reverse)
+import            Data.Maybe                       (fromMaybe)
+import            Data.Monoid                      ((<>), mconcat)
+import            Data.List                        (intercalate, intersperse, isSuffixOf, elemIndex)
 import            Data.Char                        (toLower, toUpper)
 import            Data.Time.Clock                  (UTCTime (..))
-import            Control.Monad                    (msum, filterM, (<=<), liftM, forM, filterM)
-import            System.Environment               (getArgs)
+import            Control.Monad                    (msum, filterM, (<=<), filterM)
 import            Data.Time.Format                 (TimeLocale, defaultTimeLocale, parseTimeM, formatTime)
-import            Text.Printf                      (printf)
 import            Text.Blaze.Html                  (toHtml, toValue, (!))
 import            Text.Blaze.Html.Renderer.String  (renderHtml)
-import qualified  Data.Set                         as S
 import qualified  Data.Map                         as M
 import qualified  Text.Blaze.Html5                 as H
 import qualified  Text.Blaze.Html5.Attributes      as A
@@ -61,7 +57,7 @@ main =
           >>= loadAndApplyTemplate "templates/default.html" (defaultCtx (Just "about") categories tags)
 
     -- pages
-    paginateRules pages $ \i patt -> do
+    paginateRules pages $ \i _ -> do
          route idRoute
          compile $ makeItem (show i)
             >>= loadAndApplyTemplate "templates/blog-list.html" (pageCtx Nothing i pages categories tags)
