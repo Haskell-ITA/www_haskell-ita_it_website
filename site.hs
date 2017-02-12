@@ -174,7 +174,7 @@ feedsCtx =
 getPeople :: MonadMetadata m => Identifier -> m [String]
 getPeople identifier = do
   metadata <- getMetadata identifier
-  return $ maybe [] (map trim . splitAll ",") $ M.lookup "author" metadata
+  return $ maybe [] (map trim . splitAll ",") $ lookupString "author" metadata
 
 --------------------------------------------------------------------------------
 -- ROUTES
@@ -314,7 +314,7 @@ tryParseDate = tryParseDateWithLocale defaultTimeLocale
 
 tryParseDateWithLocale :: TimeLocale -> Identifier -> Metadata -> Maybe UTCTime
 tryParseDateWithLocale locale id' metadata = do
-   let tryField k fmt = M.lookup k metadata >>= parseTime' fmt
+   let tryField k fmt = lookupString k metadata >>= parseTime' fmt
        fn             = takeFileName $ toFilePath id'
 
    maybe empty' return $ msum $
