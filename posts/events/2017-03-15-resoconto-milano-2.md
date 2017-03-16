@@ -9,7 +9,7 @@ Per questo meeting ci siamo ritrovati a Milano in
 [Venini 42](http://venini42.it/), gentilmente ospitati da
 [Mikamai](http://www.mikamai.com/) e [LinkMe](http://linkme.it/).
 
-<a href="/images/photos/meetup_2017_02_gruppone.jpg"><img src="/images/photos/meetup_2016_11_19_gruppo.jpg" alt="photo" class="img-thumbnail"></a>
+<a href="/images/photos/meetup_2017_02_25_gruppo.jpg"><img src="/images/photos/meetup_2017_02_25_gruppo.jpg" alt="photo" class="img-thumbnail"></a>
 
 # I progetti
 
