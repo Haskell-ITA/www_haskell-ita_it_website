@@ -5,7 +5,7 @@ let
   inherit (nixpkgs) pkgs;
 
   f = { mkDerivation, base, binary, blaze-html, containers
-      , filepath, hakyll, old-locale, stdenv, time
+      , filepath, hakyll, stdenv, time
       }:
       mkDerivation {
         pname = "www-haskell-ita";
@@ -14,7 +14,7 @@ let
         isLibrary = false;
         isExecutable = true;
         executableHaskellDepends = [
-          base binary blaze-html containers filepath hakyll old-locale time
+          base binary blaze-html containers filepath hakyll time
         ];
         license = stdenv.lib.licenses.bsd2;
       };
