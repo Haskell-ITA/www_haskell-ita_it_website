@@ -72,7 +72,7 @@ Se le funzioni compiono molteplici effetti (e.g.: `IO`, `State Int`,
 Nella presentazione sono trattati diversi approcci, con un interesse
 specifico relativo a proprietà di modularità ed estensibilità.
 
-Slides: Presto!
+[Slides](http://acerbi.works/haskell-eff-20151017/)
 
 ## Pair Programming
 
