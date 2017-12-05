@@ -24,7 +24,7 @@ all'edizione bolognese dell'Haskell Day).
 
 Dopo la presentazione di Luca, nel gruppo beginners, sotto la guida di Vitalij, Ruggero,
 Renzo, Francesco e Stefano, sono stati svolti degli esercizi dedicati a list comprehension
-e alle funzioni di ordine superiore filter, map e foldl: https://github.com/CodeGardenRome/esercizi-funzionali-graduali/tree/haskell/haskell
+e alle funzioni di ordine superiore filter, map e foldl: [tracce degli esercizi e testi unitari](https://github.com/CodeGardenRome/esercizi-funzionali-graduali/tree/haskell/haskell)
 
 <img src="/images/photos/meetup_2017_11_18_Vitalij.jpg" alt="photo" class="img-thumbnail"/>
 
