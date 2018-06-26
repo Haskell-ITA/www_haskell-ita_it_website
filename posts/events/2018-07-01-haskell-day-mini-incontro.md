@@ -11,8 +11,7 @@ tags: meetups
 
 **Chi:** chiunque sia interessato alla programmazione funzionale, indipendentemente dal suo livello di esperienza.
 
-**Cosa faremo:** L'ultimo weekend di Giugno vengono a Milano due ragazzi che lavorano in Purescript (e Haskell) molto preparati: Fabrizio Ferrai e Justin Woo. 
-                 Ci incontriamo a Mikamai per condividere le nostre esperienze nello sviluppo con Haskell.
+**Cosa faremo:** L'ultimo weekend di Giugno ci incontriamo a Mikamai per condividere le nostre esperienze nello sviluppo con Haskell. Ci saranno anche due ospiti che lavorano in Purescript (e Haskell) molto preparati: Fabrizio Ferrai e Justin Woo. 
                  Justin ci terrà anche una presentazione in inglese:
                  
 > Superior string spaghetti with puresveipt-jajanmen
