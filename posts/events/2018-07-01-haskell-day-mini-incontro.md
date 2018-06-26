@@ -14,7 +14,7 @@ tags: meetups
 **Cosa faremo:** L'ultimo weekend di Giugno ci incontriamo a Mikamai per condividere le nostre esperienze nello sviluppo con Haskell. Ci saranno anche due ospiti che lavorano in Purescript (e Haskell) molto preparati: Fabrizio Ferrai e Justin Woo. 
                  Justin terrà anche una presentazione in inglese:
                  
-> Superior string spaghetti with puresveipt-jajanmen
+> Superior string spaghetti with purescript-jajanmen
  
 > In this talk, Justin will talk about how PureScript can now parse type level strings by deconstructing them with Symbol Cons and match on overlapping instances using instance chains. With these techniques, he'll demonstrate how he makes better string spaghetti with his library Jajanmen to synthesize row types from symbols.​
  
