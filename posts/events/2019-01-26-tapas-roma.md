@@ -1,6 +1,6 @@
 ---
 title: TAPAS Theoretical And Practical Aspects of Software - Roma, 26 gennaio 2019
-date: 2018-06-26
+date: 2019-01-26
 author: community
 tags: meetups
 ---
