@@ -13,6 +13,12 @@ Il canale Slack per le discussioni relative a TAPAS è all'interno di quello di 
 
 Il prof. Salvo ha parlato del suo articolo riguardante la generazione dei numeri primi facendo uso di liste lazy.
 
+In particolare ha discusso una soluzione al "Crivello di Eratostene" che fa uso della generalizzazione ai "Numeri di Hamming" per filtrare i primi.
+
+Il suo lavoro ha mostrato come Haskell e la lazyness si prestano a definire una corrispondenza molto stretta fra descrizione teorica della soluzione e algoritmo effettivo, per ottenere risultati piu' efficienti degli algoritmi ottimizati tradizionali.
+
+Inoltre ha fatto notare come il compilatore puo' riservare delle strane sorprese in termini di efficienza...
+
 <img src="/images/photos/meetup_2019_tapas_prof_salvo.jpg" alt="photo" class="img-thumbnail"/>
 
 Il riepilogo degli argomenti trattati è questo:
