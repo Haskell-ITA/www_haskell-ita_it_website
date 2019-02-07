@@ -7,9 +7,7 @@ tags: meetups
 
 Il primo evento TAPAS si è svolto a Roma ed ha avuto due interventi: uno su Haskell relativo alla generazione dei numeri primi ed uno su Rust riguardante ownership e borrowing.
 
-La mailing list di TAPAS è: https://groups.google.com/forum/#!forum/tapas-rome
-
-Il canale Slack per le discussioni relative a TAPAS è all'interno di quello di Code Garden Roma: http://codegardenroma.herokuapp.com/
+[La mailing list di TAPAS è qui](https://groups.google.com/forum/#!forum/tapas-rome), il canale Slack per le discussioni relative a TAPAS è all'interno di [quello di Code Garden Roma](http://codegardenroma.herokuapp.com/).
 
 Il prof. Salvo ha parlato del suo articolo riguardante la generazione dei numeri primi facendo uso di liste lazy.
 
