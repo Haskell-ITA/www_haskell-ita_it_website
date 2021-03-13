@@ -1,6 +1,6 @@
 ---
 title: Data science and functional programming
-date: 2021-03-30
+date: 2021-03-16
 author: community
 tags: meetups
 ---
